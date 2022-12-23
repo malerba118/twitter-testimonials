@@ -1,6 +1,54 @@
 import { tweets } from "../data/tweets";
 import { mentions } from "../data/mentions";
 
+const blacklists = {
+  tweets: new Set([
+    "1570109407194750977",
+    "1551664278624735232",
+    "1553048018814996482",
+    "1517891024999391234",
+    "1552375538500702210",
+    "1525570518128246784",
+    "1290259772042670080",
+    "1590078739588984832",
+    "1598770162265882624",
+    "1527691612846972929",
+    "1512585647344832518",
+    "1520128733360832512",
+    "1600542882309578752",
+  ]),
+  mentions: new Set([
+    "1522306545979166722",
+    "1521759620003508225",
+    "1536699272221143040",
+    "1536614322327134208",
+    "1536346859538554885",
+    "1562023920907190272",
+    "1556938834264203264",
+    "1556889235398856704",
+    "1516807031512092680",
+    "1588115141937217539",
+    "1587808077251756032",
+    "1587768417335099392",
+    "1587683662421643264",
+    "1587614362692370432",
+    "1587464609979473921",
+    "1587461348493086726",
+    "1558346160586252288",
+    "1558562716935196672",
+    "1597440544703406081",
+    "1597296423883898880",
+    "1598009496429015041",
+    "1597820279526678528",
+    "1603444724387356672",
+    "1563232482874429442",
+    "1545547535397359618",
+    "1525133204969115648",
+    "1573626414716313600",
+    "1539280901405908997",
+  ]),
+};
+
 export type RawMedia = {
   type: string;
   media_url_https: string;
@@ -54,12 +102,12 @@ export class Dataset {
   public mentionsByTweetId: Record<string, Mention[]> = {};
 
   constructor(params: DatasetParams) {
-    this.tweets = params.tweets.map(
-      (data) => new Tweet({ data, dataset: this })
-    );
-    this.mentions = params.mentions.map(
-      (data) => new Mention({ data, dataset: this })
-    );
+    this.tweets = params.tweets
+      .map((data) => new Tweet({ data, dataset: this }))
+      .filter((t) => !blacklists.tweets.has(t.id));
+    this.mentions = params.mentions
+      .map((data) => new Mention({ data, dataset: this }))
+      .filter((m) => !blacklists.mentions.has(m.id));
     this.mentions.forEach((mention) => {
       mention.referencedTweetIds.forEach((tweetId) => {
         if (!this.mentionsByTweetId[tweetId]) {
@@ -159,6 +207,20 @@ export class Tweet {
 
   get replies() {
     return this.dataset.mentionsByTweetId[this.id] || [];
+  }
+
+  get likes() {
+    return Number(this.data.tweet.favorite_count);
+  }
+
+  get codesandboxUrl() {
+    return this.data.tweet.entities.urls
+      .map((u) => u.expanded_url)
+      .find((url) => url.includes("codesandbox"));
+  }
+
+  get createdAt() {
+    return new Date(this.data.tweet.created_at);
   }
 }
 
