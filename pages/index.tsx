@@ -3,16 +3,19 @@ import {
   BoxProps,
   chakra,
   Flex,
+  Heading,
   Img,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { dataset, MediaItem, RawMedia } from "../lib/data";
 
 const MotionBox = motion(Box);
 const Video = chakra("video");
+const MotionVideo = motion(Video);
 
 const tweets = dataset.tweets.filter(
   (tweet) => !tweet.isReply && tweet.hasMedia && tweet.replies.length > 0
@@ -23,13 +26,38 @@ const tweets = dataset.tweets.filter(
 // }
 
 const Media = ({ media, ...otherProps }: any) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [canPlay, setCanPlay] = useState(false);
+  const [inView, setInView] = useState(false);
+
+  useLayoutEffect(() => {
+    if (canPlay && inView) {
+      videoRef.current?.play();
+    } else {
+      videoRef.current?.pause();
+    }
+  }, [canPlay, inView]);
+
   if (media.type === "video") {
     return (
-      <Video {...otherProps}>
+      <MotionVideo
+        ref={videoRef}
+        autoPlay
+        muted
+        loop
+        onViewportEnter={() => {
+          setInView(true);
+        }}
+        onViewportLeave={() => {
+          setInView(false);
+        }}
+        onCanPlay={() => setCanPlay(true)}
+        {...otherProps}
+      >
         {media.sources.map((src: any) => (
           <source key={src.url} src={src.url} type={src.content_type} />
         ))}
-      </Video>
+      </MotionVideo>
     );
   } else {
     return <Img src={media.sources[0].url} {...otherProps} />;
@@ -46,54 +74,56 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box as="main">
-        <Box pos="fixed" inset={0} zIndex={-1}>
-          <MotionBox
-            pos="absolute"
-            h="40vw"
-            w="40vw"
-            left={0}
-            top={0}
-            bg="pink.300"
-            rounded="full"
-          />
-          <MotionBox
-            pos="absolute"
-            h="40vw"
-            w="40vw"
-            right={0}
-            bottom={0}
-            bg="purple.400"
-            rounded="full"
-          />
-          <Box
-            bg="whiteAlpha.700"
-            pos="absolute"
-            inset={0}
-            backdropFilter="blur(30px)"
-          />
-        </Box>
         {tweets.map((tweet) => (
           <Box key={tweet.id}>
-            <Flex flexDir="column" gap={16} mt={16} mb="30vh">
-              <Box pos="sticky" top={0} p={16} pb={0}>
-                <Box pos="relative" h="300px" w="500px" marginX="auto">
-                  <Media
-                    media={tweet.primaryMedia}
-                    w="100%"
-                    h="100%"
-                    rounded="2xl"
-                    objectFit="cover"
-                  />
-                </Box>
+            <Flex flexDir="column" gap={16} mb="30vh">
+              <Box pos="sticky" top={0} p={16} pb={0} bg="#fbfbfb" zIndex={1}>
+                <Media
+                  media={tweet.primaryMedia}
+                  w="550px"
+                  h="320px"
+                  borderRadius="1.75rem"
+                  objectFit="cover"
+                  boxShadow={`0px 5.4px 5.3px rgba(0, 0, 0, 0.008),
+                  0px 13px 12.6px rgba(0, 0, 0, 0.012),
+                  0px 24.4px 23.8px rgba(0, 0, 0, 0.015),
+                  0px 43.6px 42.4px rgba(0, 0, 0, 0.018),
+                  0px 81.5px 79.4px rgba(0, 0, 0, 0.022),
+                  0px 195px 190px rgba(0, 0, 0, 0.03)`}
+                  border="7px solid #fbfbfb"
+                  marginX="auto"
+                />
               </Box>
-              <Stack spacing={8} maxW="sm" marginX="auto">
+              <Stack spacing={8} w="sm" marginX="auto">
                 {tweet.replies.map((mention) => (
-                  <Box key={mention.id}>
-                    <Text fontSize="md" fontWeight="bold">
+                  <Stack
+                    key={mention.id}
+                    spacing={1}
+                    role="group"
+                    pos="relative"
+                    zIndex={0}
+                    cursor="pointer"
+                  >
+                    <Box
+                      pos="absolute"
+                      inset="-2px -4px"
+                      bgGradient="linear(to-l, pink.200, blue.200)"
+                      borderRadius="2xl"
+                      opacity={0}
+                      zIndex={-1}
+                      _groupHover={{
+                        inset: "-8px -12px",
+                        opacity: 0.25,
+                      }}
+                      transition="all 0.3s"
+                    />
+                    <Heading fontSize="md" fontWeight="bold">
                       {mention.author.name}
+                    </Heading>
+                    <Text fontSize="md" color="gray.600">
+                      {mention.text}
                     </Text>
-                    <Text fontSize="md">{mention.text}</Text>
-                  </Box>
+                  </Stack>
                 ))}
               </Stack>
             </Flex>

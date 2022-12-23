@@ -189,7 +189,11 @@ export class Mention {
   }
 
   get text() {
-    return this.data.text;
+    const segments = this.data.text.split(" ");
+    while (typeof segments[0] === "string" && segments[0].startsWith("@")) {
+      segments.shift();
+    }
+    return segments.join(" ");
   }
 }
 
