@@ -126,7 +126,7 @@ export default function Home() {
         </Center>
         {tweets.map((tweet) => (
           <Box key={tweet.id}>
-            <Flex flexDir="column" gap={8} mb="25vh">
+            <Flex flexDir="column" gap={8} mb={{ base: 8, md: 20 }}>
               <Box
                 pos="sticky"
                 top={0}
@@ -136,6 +136,18 @@ export default function Home() {
                 bg="#fbfbfb"
                 zIndex={1}
               >
+                {/* <Box
+                  borderTop="1px dashed rgba(0,0,0,0.125)"
+                  pos="absolute"
+                  top={0}
+                  left={0}
+                  right={0}
+                  style={{
+                    WebkitMaskImage:
+                      "radial-gradient(rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 0%, rgba(255,255,255, 0) 80%)",
+                    WebkitMaskSize: "100%",
+                  }}
+                /> */}
                 <Box
                   w={{ base: "100%", md: "550px" }}
                   h={{ base: "260px", md: "330px" }}
