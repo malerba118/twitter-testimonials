@@ -33,9 +33,13 @@ const MotionBox = motion(Box);
 const Video = chakra("video");
 const MotionVideo = motion(Video);
 
+const whitelist = new Set(["1602671703410282497"]);
+
 const tweets = dataset.tweets
   .filter(
-    (tweet) => !tweet.isReply && tweet.hasMedia && tweet.replies.length > 0
+    (tweet) =>
+      (!tweet.isReply && tweet.hasMedia && tweet.replies.length > 0) ||
+      whitelist.has(tweet.id)
   )
   .sort((a, b) => b.likes - a.likes);
 
