@@ -16,6 +16,10 @@ const blacklists = {
     "1512585647344832518",
     "1520128733360832512",
     "1600542882309578752",
+    "1597652912167333888",
+    "1585693165574553617",
+    "1519431138640605186",
+    "1585681843445121024",
   ]),
   mentions: new Set([
     "1522306545979166722",
@@ -46,6 +50,7 @@ const blacklists = {
     "1525133204969115648",
     "1573626414716313600",
     "1539280901405908997",
+    "1521928437874802690",
   ]),
 };
 
@@ -147,6 +152,7 @@ export class MediaItem {
       // @ts-ignore
       return this.data.video_info.variants?.map((v) => ({
         url: v.url,
+        bitrate: v.bitrate,
         content_type: v.content_type,
       }));
     } else {
@@ -213,10 +219,10 @@ export class Tweet {
     return Number(this.data.tweet.favorite_count);
   }
 
-  get codesandboxUrl() {
+  get sandboxUrl() {
     return this.data.tweet.entities.urls
       .map((u) => u.expanded_url)
-      .find((url) => url.includes("codesandbox"));
+      .find((url) => url.includes("codesandbox") || url.includes("stackblitz"));
   }
 
   get createdAt() {

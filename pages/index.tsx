@@ -78,9 +78,14 @@ const Media = ({ media, ...otherProps }: any) => {
         onCanPlay={() => setCanPlay(true)}
         {...otherProps}
       >
-        {media.sources.map((src: any) => (
-          <source key={src.url} src={src.url} type={src.content_type} />
-        ))}
+        {media.sources
+          .filter(
+            (src: any) =>
+              src.content_type === "video/mp4" && Number(src.bitrate) > 300000
+          )
+          .map((src: any) => (
+            <source key={src.url} src={src.url} type={src.content_type} />
+          ))}
       </MotionVideo>
     );
   } else {
@@ -208,9 +213,9 @@ export default function Home() {
                     </Box>
                   </Link>
                   <HStack pos="absolute" bottom={4} right={4}>
-                    {tweet.codesandboxUrl && (
+                    {tweet.sandboxUrl && (
                       <Link
-                        href={tweet.codesandboxUrl}
+                        href={tweet.sandboxUrl}
                         target="_blank"
                         _hover={{ textDecoration: "none" }}
                       >
