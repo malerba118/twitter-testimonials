@@ -1,12 +1,10 @@
 import {
   Box,
-  BoxProps,
   chakra,
   Flex,
   Heading,
   HStack,
   Icon,
-  IconButton,
   Img,
   Stack,
   Text,
@@ -16,20 +14,14 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Head from "next/head";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { dataset, MediaItem, RawMedia } from "../lib/data";
+import { useLayoutEffect, useRef, useState } from "react";
+import { dataset } from "../lib/data";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
-import {
-  AiFillCodeSandboxCircle,
-  AiFillHeart as HeartIcon,
-  AiOutlineCode,
-  AiOutlineCodeSandbox,
-} from "react-icons/ai";
+import { AiFillHeart as HeartIcon, AiOutlineCodeSandbox } from "react-icons/ai";
 import { format } from "date-fns";
 import Image from "next/image";
 import frostinPng from "../public/frostin.png";
 
-const MotionBox = motion(Box);
 const Video = chakra("video");
 const MotionVideo = motion(Video);
 
@@ -126,7 +118,7 @@ export default function Home() {
             border="1px dashed rgba(0,0,0,0.25)"
             rounded="2xl"
           >
-            Best of 2022
+            Best of Twitter
           </Text>
         </Center>
         {tweets.map((tweet) => (

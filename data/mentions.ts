@@ -1,5 +1,2718 @@
 export const mentions = [
   {
+    id: "1615011290644094981",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1615005042943090691",
+      },
+    ],
+    edit_history_tweet_ids: ["1615011290644094981"],
+    author_id: "1427362405739282433",
+    text: "@austin_malerba Yeah it does. The biggest hurdle for me is not being able to tie the 'lighting' to the objects position/rotation. E.g, if you try to fake the light on a cube, you can animate the faces when rotating on one axis, but throw a second axis in the mix and linear keyframes are useless.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1602831905040244739/ydB0sdji_normal.jpg",
+      username: "BigupJeff",
+      id: "1427362405739282433",
+      name: "Jefferson 🤜🤛",
+    },
+  },
+  {
+    id: "1614994306967683073",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614712284202385413",
+      },
+    ],
+    edit_history_tweet_ids: ["1614994306967683073"],
+    author_id: "1427362405739282433",
+    text: "@austin_malerba I've run into this problem so many times with CSS. Although I also mess with 3D in CSS.\n\nTo get around it now, I have to animate colours on the surfaces as the objects move to simulate light, but it gets very complicated and harder to fake the more complex the object becomes.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1602831905040244739/ydB0sdji_normal.jpg",
+      username: "BigupJeff",
+      id: "1427362405739282433",
+      name: "Jefferson 🤜🤛",
+    },
+  },
+  {
+    id: "1614809515404181504",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614807802115158016",
+      },
+    ],
+    edit_history_tweet_ids: ["1614809515404181504"],
+    author_id: "2588511204",
+    text: "@austin_malerba and yeah i mean i'm pretty sure Google would have the money for it",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614808957918273536",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614807802115158016",
+      },
+    ],
+    edit_history_tweet_ids: ["1614808957918273536"],
+    author_id: "2588511204",
+    text: "@austin_malerba Exactly! A browser where people could go to experience something new",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614806946376257537",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614805938590081026",
+      },
+    ],
+    edit_history_tweet_ids: ["1614806946376257537"],
+    author_id: "2588511204",
+    text: '@austin_malerba man i was just gonna pust something like this, like maybe have a version of Chrome that the "cool kids" could download where all sorts of crazy stuff is possible, while also having the "generic" version as default',
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614804777405218817",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614802565190848512",
+      },
+    ],
+    edit_history_tweet_ids: ["1614804777405218817"],
+    author_id: "2588511204",
+    text: "@austin_malerba Alright yeah on the drei website they have it tracking r3f elements, so not super clear",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614803355485741056",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614801710353944578",
+      },
+    ],
+    edit_history_tweet_ids: ["1614803355485741056"],
+    author_id: "2588511204",
+    text: "@austin_malerba lol yeah, i mean 99.9% of the sites don't need anything like this, but same here would definitely love to see browsers evolving natively",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614801419273379840",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614800756183269377",
+      },
+    ],
+    edit_history_tweet_ids: ["1614801419273379840"],
+    author_id: "2588511204",
+    text: '@austin_malerba Had a look, so it\'s like a "camera"?',
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614800756183269377",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614799574887202816",
+      },
+    ],
+    edit_history_tweet_ids: ["1614800756183269377"],
+    author_id: "2588511204",
+    text: "@austin_malerba lol yeah true, even 2d canvas compared to DOM is a lot more complex. oh never heard on View, will check it out. interesting!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614800236399951872",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614798918554128385",
+      },
+    ],
+    edit_history_tweet_ids: ["1614800236399951872"],
+    author_id: "2588511204",
+    text: "@austin_malerba yeah i've seen this api a while back, but due to lack of support kinda skimmed over. will check again",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614798851247902724",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614797636308983809",
+      },
+    ],
+    edit_history_tweet_ids: ["1614798851247902724"],
+    author_id: "2588511204",
+    text: "@austin_malerba Yeah i kinda get what you mean (i think lol), but can't you already kind of use r3f for that? i've using r3f before for 2d stuff, using lighting and effects",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614794189912539136",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614712284202385413",
+      },
+    ],
+    edit_history_tweet_ids: ["1614794189912539136"],
+    author_id: "1638573690",
+    text: "@austin_malerba Which effect are you trying to achieve?",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1550887748965486592/DX7aXnWq_normal.jpg",
+      username: "calvinmaighan",
+      id: "1638573690",
+      name: "Buddy Calvin 🧙‍♂️🔗🇨🇦",
+    },
+  },
+  {
+    id: "1614793673069441025",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614712284202385413",
+      },
+    ],
+    edit_history_tweet_ids: ["1614793673069441025"],
+    author_id: "2588511204",
+    text: "@austin_malerba For 2D, if comparing to r3f/drei, i guess using the canvas?",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614751472318562305",
+    referenced_tweets: [
+      {
+        type: "quoted",
+        id: "1614355777115889668",
+      },
+      {
+        type: "replied_to",
+        id: "1614712284202385413",
+      },
+    ],
+    edit_history_tweet_ids: ["1614751472318562305"],
+    author_id: "285913352",
+    text: "@austin_malerba Yes! Also kind of the inverse is that I have been wanting to use the rendered dom itself as environment lighting for the 3D scene.\n\nLots of opportunities to explore made easier with 3D, though not sure about perf https://t.co/zDslSaCM9P",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1293754478735364096/1i13udDp_normal.jpg",
+      username: "Chase_Davis_",
+      id: "285913352",
+      name: "Chase Davis",
+    },
+  },
+  {
+    id: "1614699775038742537",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614689909066940420",
+      },
+    ],
+    edit_history_tweet_ids: ["1614699775038742537"],
+    author_id: "2588511204",
+    text: "@austin_malerba Same. Love using libraries like radix-ui though",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1614685323774287873",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614684070440734720",
+      },
+    ],
+    edit_history_tweet_ids: ["1614685323774287873"],
+    author_id: "1290860653863788544",
+    text: "@austin_malerba @brian_lovin https://t.co/zEe3eATl0r is another I love, he is one of my main inspirations for webdev",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1524347233801748480/DPTof0Sl_normal.jpg",
+      username: "amirthazz",
+      id: "1290860653863788544",
+      name: "''Amirthaz'' Krishnan",
+    },
+  },
+  {
+    id: "1614503112399810560",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614310811069022210",
+      },
+    ],
+    edit_history_tweet_ids: ["1614503112399810560"],
+    author_id: "1290860653863788544",
+    text: "@austin_malerba @brian_lovin https://t.co/0bBWZ9IUeX being copied for the 17837363th time 🤣, lol, it's weird right? Like most pages just use that as a template to go off, would be really cool to see some weird design trends for a while",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1524347233801748480/DPTof0Sl_normal.jpg",
+      username: "amirthazz",
+      id: "1290860653863788544",
+      name: "''Amirthaz'' Krishnan",
+    },
+  },
+  {
+    id: "1614349071594192897",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614314151492345865",
+      },
+    ],
+    edit_history_tweet_ids: ["1614349071594192897"],
+    author_id: "1597266435398664194",
+    text: "@austin_malerba @brian_lovin Well designed landing page is vital.\n\nConsidering most landing pages are better designed than the actual product. If the landing page is poorly done, I simply don't trust that there's any quality or thought in the craft at that point.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1612573608664092674/hBls9Chu_normal.jpg",
+      username: "CraftQuill",
+      id: "1597266435398664194",
+      name: "Quill",
+    },
+  },
+  {
+    id: "1614312108858150917",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614310811069022210",
+      },
+    ],
+    edit_history_tweet_ids: ["1614312108858150917"],
+    author_id: "182379711",
+    text: "@austin_malerba @brian_lovin Too much motion is a killer for selling your product. This is the best landing page I’ve seen in a while. The motion grabs your attention to stop instead of distracting you from the message. https://t.co/n4uvbc7zQU",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1522464492969291776/tBY-rXcj_normal.jpg",
+      username: "marcuswood23",
+      id: "182379711",
+      name: "Marcus Wood",
+    },
+  },
+  {
+    id: "1614311369611812869",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1614310811069022210",
+      },
+    ],
+    edit_history_tweet_ids: ["1614311369611812869"],
+    author_id: "465068802",
+    text: "@austin_malerba Good point, same. I wonder if that's a side effect of being a designer/developer?",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1217652661962661888/WfiUNjzP_normal.jpg",
+      username: "brian_lovin",
+      id: "465068802",
+      name: "Brian Lovin",
+    },
+  },
+  {
+    id: "1614109731295055872",
+    referenced_tweets: [
+      {
+        type: "quoted",
+        id: "1614049618261671937",
+      },
+    ],
+    edit_history_tweet_ids: ["1614109731295055872"],
+    author_id: "1269218543217766400",
+    text: "Don't miss this @EmiGiveaways @intelligent_dex @Jordzpm @hoakbuilds @SOLTYGame @just_adreaam @fmoulin7 @austin_malerba @rmashate @lofsigma @theluckyhawk @theabeddd @nkumar23 @tribe_trades @barnji @connan_james @rMalakaib @ecarcap @cutterjn @web3gelato https://t.co/wANVLyxzc2",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1597643298209923072/EpY5oh01_normal.jpg",
+      username: "OriginBayek",
+      id: "1269218543217766400",
+      name: "Bayek_Origin",
+    },
+  },
+  {
+    id: "1614082188365922304",
+    referenced_tweets: [
+      {
+        type: "quoted",
+        id: "1614049618261671937",
+      },
+    ],
+    edit_history_tweet_ids: ["1614082188365922304"],
+    author_id: "1254994815151861761",
+    text: "Don't miss this @EmiGiveaways @intelligent_dex @Jordzpm @hoakbuilds @SOLTYGame @just_adreaam @fmoulin7 @austin_malerba @rmashate @lofsigma @theluckyhawk @theabeddd @nkumar23 @tribe_trades @barnji @connan_james @rMalakaib @ecarcap @cutterjn @web3gelato https://t.co/dhjnsVc1ZD",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1597644433767469062/P0Z77Vnr_normal.jpg",
+      username: "Sumathi63962271",
+      id: "1254994815151861761",
+      name: "Sumathi",
+    },
+  },
+  {
+    id: "1613992880414113793",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1613944595502747648",
+      },
+    ],
+    edit_history_tweet_ids: ["1613992880414113793"],
+    author_id: "1141994317936058368",
+    text: "@nandafyi @austin_malerba Oh it was indeed an inspiration 😆 I thought it was a coincidence",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1593235663733739522/A19S92G2_normal.png",
+      username: "marvr_",
+      id: "1141994317936058368",
+      name: "Marvin from 🗓 @calendrop",
+    },
+  },
+  {
+    id: "1613944595502747648",
+    referenced_tweets: [
+      {
+        type: "quoted",
+        id: "1613549087692824584",
+      },
+      {
+        type: "replied_to",
+        id: "1613944455639486466",
+      },
+    ],
+    edit_history_tweet_ids: ["1613944595502747648"],
+    author_id: "1153352959234719745",
+    text: "Inspired by this tweet and @austin_malerba's suggestion in the thread: https://t.co/ZOmKRxKkja",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1592601726997385217/O8nZqwHZ_normal.jpg",
+      username: "nandafyi",
+      id: "1153352959234719745",
+      name: "Nanda Syahrasyad",
+    },
+  },
+  {
+    id: "1613903046551166977",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1507372683423584259",
+      },
+    ],
+    edit_history_tweet_ids: ["1613903046551166977"],
+    author_id: "793559147837067264",
+    text: "@austin_malerba @framer @chakra_ui @codesandbox Why does this need framer-motion",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1270783906845949952/ESKV1Jzg_normal.jpg",
+      username: "nikil_ragav",
+      id: "793559147837067264",
+      name: "Nikil Ragav ⠕",
+    },
+  },
+  {
+    id: "1613581053624745986",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1613564262017900550",
+      },
+    ],
+    edit_history_tweet_ids: ["1613581053624745986"],
+    author_id: "701976973908652032",
+    text: "@austin_malerba @_justlilian hi Austin. Would you mind roast mine if you have the time?  https://t.co/xvS1HuXGHz      much appreciated. If anyone else has the time, I would also love to have them.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1614251214904119296/bixYCRKM_normal.jpg",
+      username: "ed_lfg",
+      id: "701976973908652032",
+      name: "ed gogogo",
+    },
+  },
+  {
+    id: "1613568324956467201",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1613568158308208644",
+      },
+    ],
+    edit_history_tweet_ids: ["1613568324956467201"],
+    author_id: "1388845587500605445",
+    text: "@_justlilian @austin_malerba as if the cost was a weight, the higher the cost the more the weight would bend the card",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1614226009905037313/GITrAjCE_normal.jpg",
+      username: "jparw3",
+      id: "1388845587500605445",
+      name: "Jack⚡️",
+    },
+  },
+  {
+    id: "1613568158308208644",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1613565371121893376",
+      },
+    ],
+    edit_history_tweet_ids: ["1613568158308208644"],
+    author_id: "1388845587500605445",
+    text: "@_justlilian @austin_malerba i think he means make it more 'bendy' the higher the cost",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1614226009905037313/GITrAjCE_normal.jpg",
+      username: "jparw3",
+      id: "1388845587500605445",
+      name: "Jack⚡️",
+    },
+  },
+  {
+    id: "1613565371121893376",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1613564262017900550",
+      },
+    ],
+    edit_history_tweet_ids: ["1613565371121893376"],
+    author_id: "1542826635191361539",
+    text: '@austin_malerba Wow, thanks for the great feedback Austin 😍\n\nNot sure i understand what you mean by "increase the droop" tho, could you reformulate? 🤷‍♂️\n\nI might be lacking some designer vocabulary haha 😅',
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1564630435132473356/vBfQ2ofL_normal.jpg",
+      username: "_justlilian",
+      id: "1542826635191361539",
+      name: "Lilian ッ",
+    },
+  },
+  {
+    id: "1613205653086179331",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612859233451610118",
+      },
+    ],
+    edit_history_tweet_ids: ["1613205653086179331"],
+    author_id: "818834421344129025",
+    text: "@austin_malerba You deserve it legend 😊❤️",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1485575513318256641/q4uMCram_normal.jpg",
+      username: "ImArikChakma",
+      id: "818834421344129025",
+      name: "arikko.eth",
+    },
+  },
+  {
+    id: "1613043393269202944",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612859233451610118",
+      },
+    ],
+    edit_history_tweet_ids: ["1613043393269202944"],
+    author_id: "1172034152",
+    text: "@austin_malerba You taught me a lot man. You deserve it. ❤️",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1598968090083360769/zJjN-JDj_normal.jpg",
+      username: "ysj151215",
+      id: "1172034152",
+      name: "Jay 🦇",
+    },
+  },
+  {
+    id: "1613032964916645888",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612859233451610118",
+      },
+    ],
+    edit_history_tweet_ids: ["1613032964916645888"],
+    author_id: "1290860653863788544",
+    text: "@austin_malerba Omg yaaaaay x🎉🎉",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1524347233801748480/DPTof0Sl_normal.jpg",
+      username: "amirthazz",
+      id: "1290860653863788544",
+      name: "''Amirthaz'' Krishnan",
+    },
+  },
+  {
+    id: "1613028821305020420",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612957858496417792",
+      },
+    ],
+    edit_history_tweet_ids: ["1613028821305020420"],
+    author_id: "306632733",
+    text: "@austin_malerba @thalion_pb @chakra_ui Agreed 👍 Still not sure what the use case would be, but it's pretty cool.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/564682290303729665/Nl1tsx2v_normal.jpeg",
+      username: "AdhamDannaway",
+      id: "306632733",
+      name: "Adham Dannaway",
+    },
+  },
+  {
+    id: "1612927170556620802",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612864986568691730",
+      },
+    ],
+    edit_history_tweet_ids: ["1612927170556620802"],
+    author_id: "306632733",
+    text: "@thalion_pb @austin_malerba @chakra_ui How indeed 😂",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/564682290303729665/Nl1tsx2v_normal.jpeg",
+      username: "AdhamDannaway",
+      id: "306632733",
+      name: "Adham Dannaway",
+    },
+  },
+  {
+    id: "1612907735250571267",
+    referenced_tweets: [
+      {
+        type: "quoted",
+        id: "1612903109742698513",
+      },
+    ],
+    edit_history_tweet_ids: ["1612907735250571267"],
+    author_id: "2193291787",
+    text: "Minted this incredible art, thanks for that collab! @austin_malerba @ernesto66809251 @Lift_store @DaffyTiny @pauljendrasiak @m_a_j_ch_rz_a_k @KevinSofen @OliviaFVane @PwincessMichael https://t.co/zzWUoYJai1",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1612801227842064386/CSjLJXTJ_normal.png",
+      username: "MinaMajor",
+      id: "2193291787",
+      name: "🤏George👌",
+    },
+  },
+  {
+    id: "1612907734449414144",
+    referenced_tweets: [
+      {
+        type: "quoted",
+        id: "1612903109742698513",
+      },
+    ],
+    edit_history_tweet_ids: ["1612907734449414144"],
+    author_id: "1199445104",
+    text: "Very nice work, best arts by Fidenza @armillspaugh @blueizdeadx @carolError @june_tai126 @IthipholC @MrWang72047997 @boxesofspiders @miljan0x @austin_malerba https://t.co/MgTWm7Hio5",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1612801186805030916/h6_5EH6__normal.png",
+      username: "babygrr7",
+      id: "1199445104",
+      name: "🤏Jason😍",
+    },
+  },
+  {
+    id: "1612895555465904129",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1556792067698970625",
+      },
+    ],
+    edit_history_tweet_ids: ["1612895555465904129"],
+    author_id: "1313747486599598080",
+    text: "@austin_malerba @itxbo cc: @KartikSoneji_, @harshgkapadia",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1468690696047521795/T5mmr-vf_normal.jpg",
+      username: "tusharnankanii",
+      id: "1313747486599598080",
+      name: "Tushar Nankani",
+    },
+  },
+  {
+    id: "1612882479777517579",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612882479777517579"],
+    author_id: "20950547",
+    text: "@austin_malerba Hey Austin, send me a DM; I might have some openings for you.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1545013027711455234/IPUXy5hm_normal.jpg",
+      username: "ArvidGerstmann",
+      id: "20950547",
+      name: "Arvid Gerstmann",
+    },
+  },
+  {
+    id: "1612881162837585920",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612881162837585920"],
+    author_id: "1382820420999516161",
+    text: "@austin_malerba Good luck!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1485324526741336065/wf7gSEHd_normal.jpg",
+      username: "Krypto_mate",
+      id: "1382820420999516161",
+      name: "Pawan 🏝️",
+    },
+  },
+  {
+    id: "1612878420991434752",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612878420991434752"],
+    author_id: "876810096285818881",
+    text: "@austin_malerba Wow, you seriously have the most amazing portfolio site I've ever seen! Best of luck in the job hunt, I'm sure you'll land something quickly",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1520500535077527554/HDtpklNq_normal.jpg",
+      username: "karooolis",
+      id: "876810096285818881",
+      name: "Karolis",
+    },
+  },
+  {
+    id: "1612870907965456384",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612859233451610118",
+      },
+    ],
+    edit_history_tweet_ids: ["1612870907965456384"],
+    author_id: "108436502",
+    text: "@austin_malerba You deserve it",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1606204864178098176/9Qp2ifUc_normal.jpg",
+      username: "alvarosabu",
+      id: "108436502",
+      name: "Alvaro Sabu",
+    },
+  },
+  {
+    id: "1612864986568691730",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612818346612850690",
+      },
+    ],
+    edit_history_tweet_ids: ["1612864986568691730"],
+    author_id: "298402674",
+    text: "@AdhamDannaway @austin_malerba @chakra_ui Oh my, how to navigate within that grid?😀",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/429887719863353344/98DUbEMk_normal.png",
+      username: "thalion_pb",
+      id: "298402674",
+      name: "Thalion",
+    },
+  },
+  {
+    id: "1612864260580986880",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612859233451610118",
+      },
+    ],
+    edit_history_tweet_ids: ["1612864260580986880"],
+    author_id: "883411696408305664",
+    text: "@austin_malerba The work on both Diode and Pointer was 🔥 excited to see what you do next and where! p.s. DMed you about opportunities @WalletConnect!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1600826598403473408/od2bLP7W_normal.jpg",
+      username: "TheHarryET",
+      id: "883411696408305664",
+      name: "Harry Bairstow",
+    },
+  },
+  {
+    id: "1612849494764273664",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612818346612850690",
+      },
+    ],
+    edit_history_tweet_ids: ["1612849494764273664"],
+    author_id: "1601345521150574592",
+    text: "@AdhamDannaway @austin_malerba @chakra_ui Would love to see a custom code component for this in @framer cc @benjaminnathan 👀",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1602734731728142336/9Bppcs67_normal.jpg",
+      username: "learnframer",
+      id: "1601345521150574592",
+      name: "Framer University",
+    },
+  },
+  {
+    id: "1612845519516073984",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612844591061028864",
+      },
+    ],
+    edit_history_tweet_ids: ["1612845519516073984"],
+    author_id: "447595652",
+    text: "@austin_malerba Dang…that project has so much potential…did you guys reach out to digikey or mouser…they’d totally benefit from a modern circuit simulator",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1390490596750602242/cmlz4Q6s_normal.jpg",
+      username: "joe_niemiec",
+      id: "447595652",
+      name: "Joe Niemiec",
+    },
+  },
+  {
+    id: "1612843512487378945",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612843512487378945"],
+    author_id: "447595652",
+    text: "@austin_malerba Whattt??? Diode is over?",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1390490596750602242/cmlz4Q6s_normal.jpg",
+      username: "joe_niemiec",
+      id: "447595652",
+      name: "Joe Niemiec",
+    },
+  },
+  {
+    id: "1612836629726609409",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612834969566564354",
+      },
+    ],
+    edit_history_tweet_ids: ["1612836629726609409"],
+    author_id: "835209520200699909",
+    text: "@austin_malerba i have perfected the gentle art of copying the url into another tab and pin-pointing the toggle-preview button fast enough for the tab to not die again.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1362053856247623680/q23Y_71D_normal.jpg",
+      username: "0xca0a",
+      id: "835209520200699909",
+      name: "☄︎",
+    },
+  },
+  {
+    id: "1612833608376385536",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520951316639744",
+      },
+    ],
+    edit_history_tweet_ids: ["1612833608376385536"],
+    author_id: "2382836425",
+    text: "@austin_malerba @Thunder_Owl Please consider opensourcing it 🙏.  It looks really useful. Especially for training new engineers in hardware",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1284758918653259776/K2YQb9XR_normal.jpg",
+      username: "tonialaribe",
+      id: "2382836425",
+      name: "Anthony Alaribe",
+    },
+  },
+  {
+    id: "1612818346612850690",
+    edit_history_tweet_ids: ["1612818346612850690"],
+    author_id: "306632733",
+    text: "Turn any content into an infinite grid 🤯\n\n&lt;InfiniteGrid&gt;\n    &lt;Photos /&gt;\n&lt;/InfiniteGrid&gt; \n\n→ https://t.co/nrmMyIkh2w \n\nCreated by @austin_malerba with Framer-motion @chakra_ui https://t.co/azqtrABqWc",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/564682290303729665/Nl1tsx2v_normal.jpeg",
+      username: "AdhamDannaway",
+      id: "306632733",
+      name: "Adham Dannaway",
+    },
+  },
+  {
+    id: "1612781503640920073",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612781503640920073"],
+    author_id: "297720729",
+    text: "@austin_malerba Ah no! Diode is really good!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/661258000930365441/mRafU_5k_normal.jpg",
+      username: "quaplek",
+      id: "297720729",
+      name: "Alex Hunsley",
+    },
+  },
+  {
+    id: "1612755695157350400",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612755695157350400"],
+    author_id: "1344035394405494798",
+    text: "@austin_malerba Sorry to hear that...you're certainly very talented, good luck with your next endeavour!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1593315876685709313/5AKegB25_normal.jpg",
+      username: "nam_2v",
+      id: "1344035394405494798",
+      name: "Nam",
+    },
+  },
+  {
+    id: "1612727144483901442",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612553404303155222",
+      },
+    ],
+    edit_history_tweet_ids: ["1612727144483901442"],
+    author_id: "213996388",
+    text: "@callum_codes @austin_malerba Ditto. Looking forward to seeing what you build next :)",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1531197855720931330/IIiQ8DeQ_normal.png",
+      username: "hot_town",
+      id: "213996388",
+      name: "Vince Canger",
+    },
+  },
+  {
+    id: "1612690063070228481",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612690063070228481"],
+    author_id: "1290860653863788544",
+    text: "@austin_malerba Damn, I'm so sorry, hope you get a great gig soon! ❤️",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1524347233801748480/DPTof0Sl_normal.jpg",
+      username: "amirthazz",
+      id: "1290860653863788544",
+      name: "''Amirthaz'' Krishnan",
+    },
+  },
+  {
+    id: "1612684507554975744",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612684507554975744"],
+    author_id: "1280375410354683904",
+    text: "@austin_malerba Wish you good luck",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1568996135460552706/49SNDi4Q_normal.jpg",
+      username: "__adewale",
+      id: "1280375410354683904",
+      name: "./CodeBender",
+    },
+  },
+  {
+    id: "1612684350625124352",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612684350625124352"],
+    author_id: "1280375410354683904",
+    text: "@austin_malerba 🥺🥺🥺 this is a sad news",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1568996135460552706/49SNDi4Q_normal.jpg",
+      username: "__adewale",
+      id: "1280375410354683904",
+      name: "./CodeBender",
+    },
+  },
+  {
+    id: "1612680977628954626",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612680977628954626"],
+    author_id: "4702272349",
+    text: "@austin_malerba i was looking forward to diode becoming a big thing, making beginner electronics accessibile, so sorry to hear that :(",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1602549370347347969/rCTXLItS_normal.jpg",
+      username: "tk_vishal_tk",
+      id: "4702272349",
+      name: "tk vishal ✨",
+    },
+  },
+  {
+    id: "1612677814331006980",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612677814331006980"],
+    author_id: "33610008",
+    text: "@austin_malerba Diode is such a wonderful tool! Bummer to hear it didn't work out. Anyone will be lucky to have your skillset! I'll definitely let you know if I come across anything.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1573324882204536832/bkwwy78x_normal.jpg",
+      username: "souporserious",
+      id: "33610008",
+      name: "Travis Arnold 🇺🇦",
+    },
+  },
+  {
+    id: "1612607347079405570",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612473145386041345",
+      },
+    ],
+    edit_history_tweet_ids: ["1612607347079405570"],
+    author_id: "1430234703051829260",
+    text: "@austin_malerba @framer @chakra_ui Dude, this looks so good!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1432665366627553281/EXtkVykZ_normal.jpg",
+      username: "joe_ashwell",
+      id: "1430234703051829260",
+      name: "Joe 🚢",
+    },
+  },
+  {
+    id: "1612571010531840020",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612483340812132352",
+      },
+    ],
+    edit_history_tweet_ids: ["1612571010531840020"],
+    author_id: "986377849300021249",
+    text: "@badrbau @austin_malerba @framer @chakra_ui @bruunke 👀",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1601622735436017666/A4rGSI5O_normal.jpg",
+      username: "maxxthedesigner",
+      id: "986377849300021249",
+      name: "/Maxx",
+    },
+  },
+  {
+    id: "1612553404303155222",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612553404303155222"],
+    author_id: "220711512",
+    text: "@austin_malerba Man that sucks, really sorry to hear! Was so impressed by Diode. Hope you land an awesome next gig :)",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/757072012556787712/xbmVTMdt_normal.jpg",
+      username: "callum_codes",
+      id: "220711512",
+      name: "Callum McIntyre",
+    },
+  },
+  {
+    id: "1612551657862336512",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612551657862336512"],
+    author_id: "1153352959234719745",
+    text: "@austin_malerba Sorry to hear Austin :(\n\nI'll definitely let you know if we have any openings!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1592601726997385217/O8nZqwHZ_normal.jpg",
+      username: "nandafyi",
+      id: "1153352959234719745",
+      name: "Nanda Syahrasyad",
+    },
+  },
+  {
+    id: "1612537284473004037",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612537284473004037"],
+    author_id: "218760604",
+    text: "@austin_malerba I'm sorry to hear that. Even though the business wasn't there, I was crazy impressed with how fast y'all built really high quality stuff.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1445956360537923590/rQxAOvLZ_normal.jpg",
+      username: "JamesTimmins",
+      id: "218760604",
+      name: "James Timmins",
+    },
+  },
+  {
+    id: "1612530598714679327",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612530598714679327"],
+    author_id: "401412529",
+    text: "@austin_malerba Damn that sucks ☹️ Though someone as talented as yourself will have no problem finding a new job 💪",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1485353546170216448/9Zm91JD0_normal.jpg",
+      username: "amosbastian",
+      id: "401412529",
+      name: "Amos",
+    },
+  },
+  {
+    id: "1612527965132460032",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612473145386041345",
+      },
+    ],
+    edit_history_tweet_ids: ["1612527965132460032"],
+    author_id: "450816884",
+    text: "@austin_malerba @framer @chakra_ui Framer Motion finally made web animations accessible to everyone. I said it countless times but it's an absolute delight to work with.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1553898188993609729/g9vMUVlm_normal.jpg",
+      username: "kettanaito",
+      id: "450816884",
+      name: "Artem Zakharchenko",
+    },
+  },
+  {
+    id: "1612527392458694663",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612526998928392192",
+      },
+    ],
+    edit_history_tweet_ids: ["1612527392458694663"],
+    author_id: "2588511204",
+    text: "@austin_malerba Yep true",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1612525277392822272",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612525277392822272"],
+    author_id: "2588511204",
+    text: "@austin_malerba damn sorry to hear that :(",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1612523572932775936",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612523572932775936"],
+    author_id: "1381287026083831808",
+    text: "@austin_malerba that sucks. hopefully, you'll get a new gig soon!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1600181341446111232/vsLzIKyp_normal.jpg",
+      username: "avneesh0612",
+      id: "1381287026083831808",
+      name: "Avneesh",
+    },
+  },
+  {
+    id: "1612521810381402112",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520951316639744",
+      },
+    ],
+    edit_history_tweet_ids: ["1612521810381402112"],
+    author_id: "1070517099410255873",
+    text: "@austin_malerba @Thunder_Owl Why though, it was such an amazing project!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1548005309637328896/huSch3zm_normal.jpg",
+      username: "_vhawk19_",
+      id: "1070517099410255873",
+      name: "vhawk19.eth is in blr",
+    },
+  },
+  {
+    id: "1612520698542522368",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612520279934132227",
+      },
+    ],
+    edit_history_tweet_ids: ["1612520698542522368"],
+    author_id: "4645838237",
+    text: "@austin_malerba diode project dead?",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1609992614354329610/gsV1rbad_normal.jpg",
+      username: "Thunder_Owl",
+      id: "4645838237",
+      name: "Juris Perkons - ThunderOwl - 🇱🇻🇺🇦🌞",
+    },
+  },
+  {
+    id: "1612483340812132352",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612473145386041345",
+      },
+    ],
+    edit_history_tweet_ids: ["1612483340812132352"],
+    author_id: "1138351712882843649",
+    text: "@austin_malerba @framer @chakra_ui @bruunke Voor onze nav",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1550418503869628416/ghwFVxHA_normal.jpg",
+      username: "badrbau",
+      id: "1138351712882843649",
+      name: "badr",
+    },
+  },
+  {
+    id: "1612481492650758145",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1612473145386041345",
+      },
+    ],
+    edit_history_tweet_ids: ["1612481492650758145"],
+    author_id: "401412529",
+    text: "@austin_malerba @framer @chakra_ui Just yesterday I was wondering how to implement this. Can always count on you for showing me the way 🙌",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1485353546170216448/9Zm91JD0_normal.jpg",
+      username: "amosbastian",
+      id: "401412529",
+      name: "Amos",
+    },
+  },
+  {
+    id: "1611794817427832833",
+    edit_history_tweet_ids: ["1611794817427832833"],
+    author_id: "16059054",
+    text: "Congrats to https://t.co/vj69J9OGa4, which has grown by 147 stars in the last 7 days and has reached 1.31K stars. \n\nThanks to the contributors: @austin_malerba\n\n https://t.co/proCXK2VjH\n#TypeScript",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1555009928024039425/bVN7En6v_normal.jpg",
+      username: "ossinsight_bot",
+      id: "16059054",
+      name: "OSS Insight Bot",
+    },
+  },
+  {
+    id: "1611494848883818497",
+    edit_history_tweet_ids: ["1611494848883818497"],
+    author_id: "1730201521",
+    text: "About to mint! @SamJwong @ccngg001 @HasibMansoori10 @rougeealiens @WaqasAh92494053 @ata_grl @ChanningBertra4 @NFTbogaji @austin_malerba @Michael02201296 @OuterspaceSTU @pslagos @JacobETH77 https://t.co/B17MFGGoWi",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1129203679880470529/9vsk4Pmt_normal.jpg",
+      username: "DerekJgrmdr",
+      id: "1730201521",
+      name: "SovereignOoman",
+    },
+  },
+  {
+    id: "1611444711658557441",
+    edit_history_tweet_ids: ["1611444711658557441"],
+    author_id: "840340153",
+    text: "$APE 📈Bullish @ambrosioof @GolfLords @JacobShea @austin_malerba @HanyaoFabric @franksynowicz @WizardofFBA @glitchdorps @nstor821 https://t.co/HTAOuAli2p",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/492378703876206592/BW0011eW_normal.jpeg",
+      username: "Cheryl_Baumler",
+      id: "840340153",
+      name: "Cheryl Baumler",
+    },
+  },
+  {
+    id: "1611263672311255040",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1521505091924246528",
+      },
+    ],
+    edit_history_tweet_ids: ["1611263672311255040"],
+    author_id: "1159370084105838592",
+    text: "@austin_malerba @framer Can you please share last 4 animation source code.",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1496516798392696836/MTRBep6Q_normal.jpg",
+      username: "MuklesHossen",
+      id: "1159370084105838592",
+      name: "Mukles Hossen",
+    },
+  },
+  {
+    id: "1611263435366600704",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    edit_history_tweet_ids: ["1611263435366600704"],
+    author_id: "1159370084105838592",
+    text: "@austin_malerba @framer @chakra_ui Can you please share last 4 animation source code?",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1496516798392696836/MTRBep6Q_normal.jpg",
+      username: "MuklesHossen",
+      id: "1159370084105838592",
+      name: "Mukles Hossen",
+    },
+  },
+  {
+    id: "1611146778983960576",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1611092251886882816",
+      },
+    ],
+    edit_history_tweet_ids: ["1611146778983960576"],
+    author_id: "182379711",
+    text: "@austin_malerba @Ionicframework I've read through it but I'm a react pleb for better or worse 😅",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1522464492969291776/tBY-rXcj_normal.jpg",
+      username: "marcuswood23",
+      id: "182379711",
+      name: "Marcus Wood",
+    },
+  },
+  {
+    id: "1611097277732380674",
+    edit_history_tweet_ids: ["1611097277732380674"],
+    author_id: "22024589",
+    text: "#WebDesign &amp; #WebDev #News: Collective #746 at @codrops \nWebspaces @gfodor * Recap @companiestools * @codebydennis website *  mafs @stevenpetryk * SVG rope by S.Tadić * Infinite Grid @austin_malerba * + ❤️@CodePen\n#ui #technews #coding #techlife #webgl\n\nhttps://t.co/3NBpTSGg71 https://t.co/NDo7EnyMvY",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1443729656067264516/huVDFoD0_normal.jpg",
+      username: "pablolarah",
+      id: "22024589",
+      name: "Pablo Lara H",
+    },
+  },
+  {
+    id: "1610984477236264960",
+    edit_history_tweet_ids: ["1610984477236264960"],
+    author_id: "1386665672139329537",
+    text: "The 3D circuit simulator from @austin_malerba is no replacement for existing tools. But it comes with a lot of fun and you don't need to cut wires!\n\nhttps://t.co/YcHs9C1Vy7\n\n#8bitnews #retrocomputing #electronics #3d #microelectronics #breadboards https://t.co/2M5FCuhw4g",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1386665756448985088/iz7NzXGf_normal.jpg",
+      username: "8bitnews1",
+      id: "1386665672139329537",
+      name: "8bitnews",
+    },
+  },
+  {
+    id: "1610769608738312193",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610764593776758800",
+      },
+    ],
+    edit_history_tweet_ids: ["1610769608738312193"],
+    author_id: "2588511204",
+    text: "@austin_malerba but before I do I was thinking about your idea with @nextjs/@vercel  og image endpoints. need to look a bit more into it, but from what i saw i would need to inline the styles for each template so that you can easily copy the jsx",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1610765904656142346",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610764593776758800",
+      },
+    ],
+    edit_history_tweet_ids: ["1610765904656142346"],
+    author_id: "2588511204",
+    text: "@austin_malerba thanks man! around 90% of my time spent on this was tweaking the design haha 😂. been using it for my website and it works pretty good. need to add a bunch more templates though",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+      id: "2588511204",
+      name: "Nico Pellerin",
+    },
+  },
+  {
+    id: "1610689236184829968",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610673506064240643",
+      },
+    ],
+    edit_history_tweet_ids: ["1610689236184829968"],
+    author_id: "1191477472396763136",
+    text: "@austin_malerba 💕",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1583261404001435648/oL_UX6EJ_normal.jpg",
+      username: "splinetool",
+      id: "1191477472396763136",
+      name: "Spline",
+    },
+  },
+  {
+    id: "1610688290377670656",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610687354033041409",
+      },
+    ],
+    edit_history_tweet_ids: ["1610688290377670656"],
+    author_id: "1378623255863558145",
+    text: "@austin_malerba it's a struggle haha",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1543741867736588288/fFI5A4j1_normal.jpg",
+      username: "konno_donnoi",
+      id: "1378623255863558145",
+      name: "me",
+    },
+  },
+  {
+    id: "1610570992468000769",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610354261975764994",
+      },
+    ],
+    edit_history_tweet_ids: ["1610570992468000769"],
+    author_id: "242372434",
+    text: "@austin_malerba @framer @chakra_ui Thanks man have a good one and best of luck with this!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1598833898485518336/-WFB4oaw_normal.jpg",
+      username: "NoBanksNearby",
+      id: "242372434",
+      name: "NoBanksNearby | SaveAs | SOULtergeist | NFTs",
+    },
+  },
+  {
+    id: "1610340388975570946",
+    edit_history_tweet_ids: ["1610340388975570946"],
+    author_id: "478175844",
+    text: "i cant believe its happening again 😱😱 @ZohraNFT @BLACKJ0130 @gleane5 @zoe_trodd @nikkolausen @Journey168 @RadMGnMT @EverettBourbon @Darolaj1 @white4ker @austin_malerba @lsdpunksNFT @QuackQuack_MTFK @mininode69 @Lucienne_Nft https://t.co/BPz106YUW4",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1587713059472248832/oyNkJeXl_normal.png",
+      username: "jen_pizano",
+      id: "478175844",
+      name: "jdott",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui That’s some pretty code.",
+    author_id: "245372244",
+    id: "1609963449915957248",
+    edit_history_tweet_ids: ["1609963449915957248"],
+    author: {
+      id: "245372244",
+      name: "Mattis Larsson",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1261772980323057665/z1rIgj_A_normal.jpg",
+      username: "mattisxy",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui 🔥🔥🔥",
+    author_id: "131941348",
+    id: "1609928018926903297",
+    edit_history_tweet_ids: ["1609928018926903297"],
+    author: {
+      id: "131941348",
+      name: "Sam Selikoff",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1301532598594928646/xBYs5HDf_normal.jpg",
+      username: "samselikoff",
+    },
+  },
+  {
+    id: "1610339846329106433",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    edit_history_tweet_ids: ["1610339846329106433"],
+    author_id: "455170722",
+    text: "@austin_malerba @framer @chakra_ui Really nice drop-in to make a ticker interactive - had to add a couple of listeners and disable overscroll :) https://t.co/4lMlSwCRxU",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1504252698450821122/HE0gZ_hG_normal.jpg",
+      username: "kumquatexpress",
+      id: "455170722",
+      name: "Boyang Niu",
+    },
+  },
+  {
+    id: "1610330839300337665",
+    edit_history_tweet_ids: ["1610330839300337665"],
+    author_id: "2943260383",
+    text: "register quick @NFTFineArtNews @austin_malerba @NFT_Master999 @PhungLe52446015 @omglbc @DashoferH @Awebitxh @colossus_DHova @eddiegadj @dirty_slogan https://t.co/OjZvkxiynn",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1317510471860293632/GG68SxkO_normal.jpg",
+      username: "ssakethh",
+      id: "2943260383",
+      name: "saketh",
+    },
+  },
+  {
+    id: "1610277645203443712",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610276067008286720",
+      },
+    ],
+    edit_history_tweet_ids: ["1610277645203443712"],
+    author_id: "1290860653863788544",
+    text: "@austin_malerba @_84436 @framer @chakra_ui Sure bro! I will screenrec some stuff and send them in dms! See ya in a bit!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1524347233801748480/DPTof0Sl_normal.jpg",
+      username: "amirthazz",
+      id: "1290860653863788544",
+      name: "''Amirthaz'' Krishnan",
+    },
+  },
+  {
+    id: "1610277308295950338",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610276794468556800",
+      },
+    ],
+    edit_history_tweet_ids: ["1610277308295950338"],
+    author_id: "1238814408672829441",
+    text: "@austin_malerba @framer @chakra_ui also for good measure here's the same thing but on my phone (Chrome 108 in Custom Tab, Android 11) https://t.co/33TIlWSDUp",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1593072371929612290/UksZ7fvJ_normal.jpg",
+      username: "_84436",
+      id: "1238814408672829441",
+      name: "not puppycat",
+    },
+  },
+  {
+    id: "1610276794468556800",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610275026397450241",
+      },
+    ],
+    edit_history_tweet_ids: ["1610276794468556800"],
+    author_id: "1238814408672829441",
+    text: "@austin_malerba @framer @chakra_ui it doesn't fly into space if I fling hard enough like what your demo video apparently showed, but this is awesome! it feels much smoother now. https://t.co/MFKu9fs1ds",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1593072371929612290/UksZ7fvJ_normal.jpg",
+      username: "_84436",
+      id: "1238814408672829441",
+      name: "not puppycat",
+    },
+  },
+  {
+    id: "1610275170316582912",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610254118764904449",
+      },
+    ],
+    edit_history_tweet_ids: ["1610275170316582912"],
+    author_id: "1290860653863788544",
+    text: "@austin_malerba @_84436 @framer @chakra_ui Hey, can I help? I have a lotta Android devices Austin, lemme know how I can get feedback to you in an useful manner!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1524347233801748480/DPTof0Sl_normal.jpg",
+      username: "amirthazz",
+      id: "1290860653863788544",
+      name: "''Amirthaz'' Krishnan",
+    },
+  },
+  {
+    id: "1610275026397450241",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610272660365377536",
+      },
+    ],
+    edit_history_tweet_ids: ["1610275026397450241"],
+    author_id: "1238814408672829441",
+    text: "@austin_malerba @framer @chakra_ui damn I didn't think you'd be this fast. thank you, and hold on lemme get my stuff",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1593072371929612290/UksZ7fvJ_normal.jpg",
+      username: "_84436",
+      id: "1238814408672829441",
+      name: "not puppycat",
+    },
+  },
+  {
+    id: "1610259927653838854",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    edit_history_tweet_ids: ["1610259927653838854"],
+    author_id: "94119928",
+    text: "@austin_malerba @framer @chakra_ui It would be cool if you could link a public google photos album with it",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1610603853128560641/6E70XRKW_normal.jpg",
+      username: "siddhartha268",
+      id: "94119928",
+      name: "Sid",
+    },
+  },
+  {
+    id: "1610251838737231872",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    edit_history_tweet_ids: ["1610251838737231872"],
+    author_id: "242372434",
+    text: "@austin_malerba @framer @chakra_ui This is INCREDIBLE! I have two large projects coming out. One with over 4k images and one with about 10k\n\nCan I set one up for each project if I know nothing about coding but I learn fast? I looked at the link and it reminds me of p5.js code as I have played around that.\n\n🤝",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1598833898485518336/-WFB4oaw_normal.jpg",
+      username: "NoBanksNearby",
+      id: "242372434",
+      name: "NoBanksNearby | SaveAs | SOULtergeist | NFTs",
+    },
+  },
+  {
+    id: "1610246864603074562",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    edit_history_tweet_ids: ["1610246864603074562"],
+    author_id: "1238814408672829441",
+    text: "@austin_malerba @framer @chakra_ui the scrolling/panning gesture doesn't feel great on my Android tablet (Chrome 108 on Android 13). otherwise neat grid! https://t.co/cTfcJ0YXvt",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1593072371929612290/UksZ7fvJ_normal.jpg",
+      username: "_84436",
+      id: "1238814408672829441",
+      name: "not puppycat",
+    },
+  },
+  {
+    id: "1610245194414456834",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    edit_history_tweet_ids: ["1610245194414456834"],
+    author_id: "1430234703051829260",
+    text: "@austin_malerba @framer @chakra_ui Well this is just awesome. Great work Austin. Looks smooooth af!",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1432665366627553281/EXtkVykZ_normal.jpg",
+      username: "joe_ashwell",
+      id: "1430234703051829260",
+      name: "Joe 🚢",
+    },
+  },
+  {
+    id: "1610244592791687170",
+    edit_history_tweet_ids: ["1610244592791687170"],
+    author_id: "3165689205",
+    text: "🤔 ¿Estás buscando una librería para mostrar animaciones mientras haces scroll?\n\n⬇️ Scrollex\nBuild beautiful scroll experiences using minimal code\n\n☆ Creado por @austin_malerba \nhttps://t.co/pMY0za5mTF https://t.co/TcBg2e8wkM",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1440615281521352711/N2oYCSE1_normal.jpg",
+      username: "pheralb_",
+      id: "3165689205",
+      name: "Pablo",
+    },
+  },
+  {
+    id: "1610220708608765952",
+    edit_history_tweet_ids: ["1610220708608765952"],
+    author_id: "968110571257135105",
+    text: "https://t.co/XR3It1AHG0 by @austin_malerba is so good. Thank You already\nStarted with my project's front-end today, suggest some color schemes. \nWhat project am I doing - checked my pinned tweet. https://t.co/97TByOCKWy",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613208868598984705/vEAYSYJl_normal.jpg",
+      username: "tanishhire5",
+      id: "968110571257135105",
+      name: "Tanish Hire",
+    },
+  },
+  {
+    id: "1610202325854871553",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    edit_history_tweet_ids: ["1610202325854871553"],
+    author_id: "1357810768868237317",
+    text: "@austin_malerba @framer @chakra_ui Well done 👍 tanks for the code source",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1484103310009380866/1tlgVFMz_normal.jpg",
+      username: "NowMoDesign",
+      id: "1357810768868237317",
+      name: "nowmo.design",
+    },
+  },
+  {
+    id: "1610192268614578176",
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609985036979425280",
+      },
+    ],
+    edit_history_tweet_ids: ["1610192268614578176"],
+    author_id: "1316549132",
+    text: "@AllDevThings @austin_malerba @framer @chakra_ui @Pinterest Please no. 😂",
+    author: {
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1568920187956785152/gf1nyKrm_normal.jpg",
+      username: "24palettes",
+      id: "1316549132",
+      name: "Bikiron",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui Will try to implement it in my projects !!\nThank you for sharing the code ! (especially for sharing the code)",
+    author_id: "968110571257135105",
+    id: "1610187162397585408",
+    edit_history_tweet_ids: ["1610187162397585408"],
+    author: {
+      id: "968110571257135105",
+      name: "Tanish Hire",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613208868598984705/vEAYSYJl_normal.jpg",
+      username: "tanishhire5",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui Dope ✨ Do you think it’s possible to build an infinite fractal grid?",
+    author_id: "114261688",
+    id: "1610120511820042240",
+    edit_history_tweet_ids: ["1610120511820042240"],
+    author: {
+      id: "114261688",
+      name: "Konstantin",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1502343752446361610/KlDsCQ99_normal.jpg",
+      username: "_nmwur",
+    },
+  },
+  {
+    text: "This is one of the best mints right now!!!! @bigbellydaddi @ManojKu03447329 @sveta_zhl @koolkids_klub @Innnaa222 @BBQAnon69 @3D_100 @mauriziopedre @0x_Pedro @gabbyisabel_ @EMonkeyArts @safalyamohanta @0exVader @austin_malerba @eRomantix https://t.co/VAiyXcueJh",
+    author_id: "35378658",
+    id: "1610117765884530690",
+    edit_history_tweet_ids: ["1610117765884530690"],
+    author: {
+      id: "35378658",
+      name: "steve wiemeler",
+      profile_image_url:
+        "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+      username: "stifopedas",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui Looks neat is it like a 2D carousel ? ✌️",
+    author_id: "222045949",
+    id: "1610041374635687937",
+    edit_history_tweet_ids: ["1610041374635687937"],
+    author: {
+      id: "222045949",
+      name: "Simon Dragsbæk 🅰",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1580478644144803843/92CjGAid_normal.jpg",
+      username: "SimonDragsbaek",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui Very cool",
+    author_id: "3179389829",
+    id: "1610032362917617669",
+    edit_history_tweet_ids: ["1610032362917617669"],
+    author: {
+      id: "3179389829",
+      name: "Damiano Fusco",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1601563631543533568/_wVgxN91_normal.jpg",
+      username: "DamianoMe",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui @SaveToNotion #tweet #webdesign",
+    author_id: "875197729",
+    id: "1610020939671937026",
+    edit_history_tweet_ids: ["1610020939671937026"],
+    author: {
+      id: "875197729",
+      name: "Nebulae",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1348538484177457153/PVLQcoYr_normal.jpg",
+      username: "Nebulae__",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1610001936169803777",
+      },
+    ],
+    text: "@austin_malerba @talpack @hamitaksln @framer @chakra_ui A lot of smooth scroll libraries have normalization techniques for this, perhaps look into that?",
+    author_id: "837093439",
+    id: "1610013976129114116",
+    edit_history_tweet_ids: ["1610013976129114116"],
+    author: {
+      id: "837093439",
+      name: "Shiv",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1550247711760416768/JaO9rJ-1_normal.jpg",
+      username: "ShivamSinha199",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui 😮😮",
+    author_id: "855703730473259008",
+    id: "1609987962611335170",
+    edit_history_tweet_ids: ["1609987962611335170"],
+    author: {
+      id: "855703730473259008",
+      name: "Omkar Kulkarni ⚛️",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1599454710607450112/lOUVOveh_normal.jpg",
+      username: "Omkar_K45",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609944060508385282",
+      },
+    ],
+    text: '@austin_malerba @hamitaksln @framer @chakra_ui Hello, android/Firefox here: screen scrolls "faster" than my finger. Really nice work anyway! https://t.co/CKnRGM8e0N',
+    author_id: "2217579455",
+    id: "1609986932611907584",
+    edit_history_tweet_ids: ["1609986932611907584"],
+    author: {
+      id: "2217579455",
+      name: "talpack",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/378800000860039624/gLY7x4D1_normal.jpeg",
+      username: "talpack",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui Would love to see @Pinterest adopt this!!",
+    author_id: "1401538894378586120",
+    id: "1609985036979425280",
+    edit_history_tweet_ids: ["1609985036979425280"],
+    author: {
+      id: "1401538894378586120",
+      name: "Krishna",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613426580172460033/erkFtvYi_normal.jpg",
+      username: "AllDevThings",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609974356054052864",
+      },
+    ],
+    text: "@austin_malerba @brian_lovin Wheel events dont work on touch devices and not relying on scroll behavior either as it’s a 3D transformed list. Need to manually calculate delta in touchstart/touchmove events.",
+    author_id: "1069665489968947206",
+    id: "1609976920900255749",
+    edit_history_tweet_ids: ["1609976920900255749"],
+    author: {
+      id: "1069665489968947206",
+      name: "rauno",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1525606643794427905/17-x8e9o_normal.jpg",
+      username: "raunofreiberg",
+    },
+  },
+  // {
+  // 	"referenced_tweets": [
+  // 		{
+  // 			"type": "replied_to",
+  // 			"id": "1609915292095860740"
+  // 		}
+  // 	],
+  // 	"text": "@austin_malerba @framer @chakra_ui That’s some pretty code.",
+  // 	"author_id": "245372244",
+  // 	"id": "1609963449915957248",
+  // 	"edit_history_tweet_ids": [
+  // 		"1609963449915957248"
+  // 	],
+  // 	"author": {
+  // 		"id": "245372244",
+  // 		"name": "Mattis Larsson",
+  // 		"profile_image_url": "https://pbs.twimg.com/profile_images/1261772980323057665/z1rIgj_A_normal.jpg",
+  // 		"username": "mattisxy"
+  // 	}
+  // },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui @SaveToNotion #Thread #Webdev",
+    author_id: "114156641",
+    id: "1609961447945035776",
+    edit_history_tweet_ids: ["1609961447945035776"],
+    author: {
+      id: "114156641",
+      name: "Omar Al Matar | Bewinxed | RADAR Bot Dev",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1554709105654349824/sDPscPVh_normal.jpg",
+      username: "Bewinxed",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui Sir it's not work on mobile device.",
+    author_id: "1159370084105838592",
+    id: "1609958860399480832",
+    edit_history_tweet_ids: ["1609958860399480832"],
+    author: {
+      id: "1159370084105838592",
+      name: "Mukles Hossen",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1496516798392696836/MTRBep6Q_normal.jpg",
+      username: "MuklesHossen",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609949835431673856",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui Nice. Will def play around with it.",
+    author_id: "603839216",
+    id: "1609957711910940677",
+    edit_history_tweet_ids: ["1609957711910940677"],
+    author: {
+      id: "603839216",
+      name: "Samuel Omanchi",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1584568441373179907/tINCSFZf_normal.jpg",
+      username: "Cortehzz",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui love it!",
+    author_id: "3058483868",
+    id: "1609956689716953088",
+    edit_history_tweet_ids: ["1609956689716953088"],
+    author: {
+      id: "3058483868",
+      name: "Seehsam",
+      profile_image_url:
+        "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+      username: "seehsam",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui Super nice. How would you make grid areas dynamic?",
+    author_id: "603839216",
+    id: "1609948416250970112",
+    edit_history_tweet_ids: ["1609948416250970112"],
+    author: {
+      id: "603839216",
+      name: "Samuel Omanchi",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1584568441373179907/tINCSFZf_normal.jpg",
+      username: "Cortehzz",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui I can already imagine someone having this in an iframe on their photography site.",
+    author_id: "1441847074237009921",
+    id: "1609947097326829571",
+    edit_history_tweet_ids: ["1609947097326829571"],
+    author: {
+      id: "1441847074237009921",
+      name: "Jack Shelton",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1496173640467075079/5OeOD3z8_normal.jpg",
+      username: "TheJackShelton",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609942529369149442",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui You are welcome. Good luck :)",
+    author_id: "1610822510",
+    id: "1609945561704325128",
+    edit_history_tweet_ids: ["1609945561704325128"],
+    author: {
+      id: "1610822510",
+      name: "Abdulhamit Akaslan",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1366006335528185856/YAy2pT67_normal.jpg",
+      username: "hamitaksln",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609941726910709763",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui It's android/chrome\nI'm trying to swipe so hard but the result is like that. https://t.co/ioFE9Jj8Ud",
+    author_id: "1610822510",
+    id: "1609942529369149442",
+    edit_history_tweet_ids: ["1609942529369149442"],
+    author: {
+      id: "1610822510",
+      name: "Abdulhamit Akaslan",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1366006335528185856/YAy2pT67_normal.jpg",
+      username: "hamitaksln",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui Nicely done. However it's not working properly on mobile.",
+    author_id: "1610822510",
+    id: "1609939280725684226",
+    edit_history_tweet_ids: ["1609939280725684226"],
+    author: {
+      id: "1610822510",
+      name: "Abdulhamit Akaslan",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1366006335528185856/YAy2pT67_normal.jpg",
+      username: "hamitaksln",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui amazing!! 😋",
+    author_id: "3060507765",
+    id: "1609931316425883652",
+    edit_history_tweet_ids: ["1609931316425883652"],
+    author: {
+      id: "3060507765",
+      name: "Hazem",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1556666360238940163/AJnbKlV2_normal.jpg",
+      username: "hazemwahb",
+    },
+  },
+  // {
+  //   referenced_tweets: [
+  //     {
+  //       type: "replied_to",
+  //       id: "1609915292095860740",
+  //     },
+  //   ],
+  //   text: "@austin_malerba @framer @chakra_ui 🔥🔥🔥",
+  //   author_id: "131941348",
+  //   id: "1609928018926903297",
+  //   edit_history_tweet_ids: ["1609928018926903297"],
+  //   author: {
+  //     id: "131941348",
+  //     name: "Sam Selikoff",
+  //     profile_image_url:
+  //       "https://pbs.twimg.com/profile_images/1301532598594928646/xBYs5HDf_normal.jpg",
+  //     username: "samselikoff",
+  //   },
+  // },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1609915292095860740",
+      },
+    ],
+    text: "@austin_malerba @framer @chakra_ui Very cool 🤩",
+    author_id: "918465151124242432",
+    id: "1609923062681538562",
+    edit_history_tweet_ids: ["1609923062681538562"],
+    author: {
+      id: "918465151124242432",
+      name: "Nicolas Toulemont",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1446105396528271361/LqMd4pwQ_normal.jpg",
+      username: "n_toulemont",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1608603728478863360",
+      },
+    ],
+    text: "@austin_malerba Weird.. Last week all I could see was arduino blink... And no code...",
+    author_id: "14138598",
+    id: "1608874166408859649",
+    edit_history_tweet_ids: ["1608874166408859649"],
+    author: {
+      id: "14138598",
+      name: "Knelf",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/973875522987024389/oCAb8Pxt_normal.jpg",
+      username: "knelf",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1608494337406504961",
+      },
+    ],
+    text: "@austin_malerba 😭 this is cooooooool",
+    author_id: "1290860653863788544",
+    id: "1608632418269024259",
+    edit_history_tweet_ids: ["1608632418269024259"],
+    author: {
+      id: "1290860653863788544",
+      name: "''Amirthaz'' Krishnan",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1524347233801748480/DPTof0Sl_normal.jpg",
+      username: "amirthazz",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1608604091470721024",
+      },
+    ],
+    text: "@austin_malerba Would definitely contribute to it if it was, could be a good use for my unused MsC in electrotechnical engineering 😄",
+    author_id: "900546225480531968",
+    id: "1608628541696147458",
+    edit_history_tweet_ids: ["1608628541696147458"],
+    author: {
+      id: "900546225480531968",
+      name: "pZ",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1584688906221543424/8klgTpR5_normal.jpg",
+      username: "pdr_znh",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1608494337406504961",
+      },
+    ],
+    text: "@austin_malerba Tried inverting a capacitor but did not explode 0/10...\nJk this is awesome, is it open source?",
+    author_id: "900546225480531968",
+    id: "1608589599303172097",
+    edit_history_tweet_ids: ["1608589599303172097"],
+    author: {
+      id: "900546225480531968",
+      name: "pZ",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1584688906221543424/8klgTpR5_normal.jpg",
+      username: "pdr_znh",
+    },
+  },
+  {
+    text: "register quick @chimmybubu @AnongNamvong @Lockebrk @austin_malerba @jordanpayne @amandagore @oxcivouleth @ShaunoftheSmith @Amir76214062 https://t.co/evDnrLawLj",
+    author_id: "1012400680160714754",
+    id: "1608587520987762688",
+    edit_history_tweet_ids: ["1608587520987762688"],
+    author: {
+      id: "1012400680160714754",
+      name: "kartikey_35",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1594576384751697920/hIl9mHRb_normal.jpg",
+      username: "kartike13767022",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1608494337406504961",
+      },
+    ],
+    text: "@austin_malerba Tried it the other day but couldn't really check it out without signing up alas. Shame",
+    author_id: "14138598",
+    id: "1608577868011036672",
+    edit_history_tweet_ids: ["1608577868011036672"],
+    author: {
+      id: "14138598",
+      name: "Knelf",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/973875522987024389/oCAb8Pxt_normal.jpg",
+      username: "knelf",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1608523313059340289",
+      },
+    ],
+    text: "@austin_malerba @KennethCassel Yup that was my thought, those are the perfect first sensor for students.",
+    author_id: "108436502",
+    id: "1608524874162794497",
+    edit_history_tweet_ids: ["1608524874162794497"],
+    author: {
+      id: "108436502",
+      name: "Alvaro Sabu",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1606204864178098176/9Qp2ifUc_normal.jpg",
+      username: "alvarosabu",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1608494337406504961",
+      },
+    ],
+    text: "@austin_malerba this is so cool",
+    author_id: "1485622501598277632",
+    id: "1608513398739705863",
+    edit_history_tweet_ids: ["1608513398739705863"],
+    author: {
+      id: "1485622501598277632",
+      name: "Dave",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1602518027857285124/GO7anqGs_normal.jpg",
+      username: "DaveDaveDev",
+    },
+  },
+  {
+    text: "damnnn @Ash1eyJoy @austin_malerba @s_guigue @DanEllisScience @famma_indri @NgenArts @sup3rbus @lynsay_blake @DDevetas https://t.co/tCercOmRBC",
+    author_id: "1361564006520078337",
+    id: "1608257817319976961",
+    edit_history_tweet_ids: ["1608257817319976961"],
+    author: {
+      id: "1361564006520078337",
+      name: "RöMän",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1601112735470723074/fW7ZGR_0_normal.jpg",
+      username: "MEhsanzada",
+    },
+  },
+  {
+    text: "damn im in !! @iebvg1ddrpjn @0xPlayer13 @austin_malerba @mikirishi @trinath_89 @ugurdastann @NaWolverine @marcelinaceria @stepn_love2walk @Valenti13494996 @HandleMA @davidfromkansas @DamonSchoeffler @0xdavos_eth https://t.co/RPvZ7j9Oqn",
+    author_id: "46751424",
+    id: "1608165845900955656",
+    edit_history_tweet_ids: ["1608165845900955656"],
+    author: {
+      id: "46751424",
+      name: "Wendell Silva",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1262183904494211078/dMAw96S5_normal.jpg",
+      username: "WendellSporium",
+    },
+  },
+  {
+    text: "This is the future of generative art!! @Sean_Connors @Marlo_NFT @Crypto_Moonboys @QASIMAbdulkari4 @austin_malerba @nltkhoa @takplus3 @reohardtoga1978 @Abhishe54240990 @bnb_onie @emalorenzo_ @cwdonegan @notzacstu https://t.co/pAK9lYNyoP",
+    author_id: "1901539488",
+    id: "1607820508636282887",
+    edit_history_tweet_ids: ["1607820508636282887"],
+    author: {
+      id: "1901539488",
+      name: "joao b pereira perei",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/505100401658433536/oQkh8Lve_normal.png",
+      username: "jholgol",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1607398779539361794",
+      },
+    ],
+    text: "@austin_malerba Damn son. This is cool.",
+    author_id: "213996388",
+    id: "1607819679405408263",
+    edit_history_tweet_ids: ["1607819679405408263"],
+    author: {
+      id: "213996388",
+      name: "Vince Canger",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1531197855720931330/IIiQ8DeQ_normal.png",
+      username: "hot_town",
+    },
+  },
+  {
+    text: "I think series 2 will go to 50 ETH @lferg2612 @JonnyLindblom @ohnahji @pmark2210 @austin_malerba @Pasoba1 @ClaudiaTinni @davidthadood @McmullenJerico @natived_ @broolynisme @chia61915791 @Btman_Jeff @romain_marula https://t.co/8q1OHzvlwl",
+    author_id: "1708748010",
+    id: "1607797819301134336",
+    edit_history_tweet_ids: ["1607797819301134336"],
+    author: {
+      id: "1708748010",
+      name: "Ana",
+      profile_image_url:
+        "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+      username: "Anabarross1",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1607398779539361794",
+      },
+    ],
+    text: "@austin_malerba Wow!, defo will be bookmarking this",
+    author_id: "573869701",
+    id: "1607628856026103809",
+    edit_history_tweet_ids: ["1607628856026103809"],
+    author: {
+      id: "573869701",
+      name: "Ye Mi.jsx ☘️",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1530264804681736193/6jkOph4v_normal.jpg",
+      username: "BlackTiyemi",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1607398779539361794",
+      },
+    ],
+    text: "@austin_malerba Amazing work Austin!",
+    author_id: "3945264609",
+    id: "1607568067370049537",
+    edit_history_tweet_ids: ["1607568067370049537"],
+    author: {
+      id: "3945264609",
+      name: "Kush",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1541426007546028032/nRqAYpX8_normal.jpg",
+      username: "just_kush_",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1607398779539361794",
+      },
+    ],
+    text: "@austin_malerba Visually impressive 👏",
+    author_id: "1370963282",
+    id: "1607551888488300545",
+    edit_history_tweet_ids: ["1607551888488300545"],
+    author: {
+      id: "1370963282",
+      name: "0xStim",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1608419148757098498/reDaSPYg_normal.jpg",
+      username: "0xStim",
+    },
+  },
+  {
+    text: "WHAT?? @faction_art @CandisLenon @yyyusufaji @levinedave19 @List2022_NFT @metayve @IGoCrazyFromYT @saiiiNFT @fasta_max @austin_malerba @BlueSunNFT @Litstan_eth @aj_ahmad6 https://t.co/cN0bjvozSP",
+    author_id: "1430394170678472706",
+    id: "1607537300082425862",
+    edit_history_tweet_ids: ["1607537300082425862"],
+    author: {
+      id: "1430394170678472706",
+      name: "Cole Thomas",
+      profile_image_url:
+        "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+      username: "ColeTho71037631",
+    },
+  },
+  {
+    text: "Can I still participate in test net and complete tasks to get eeligible for the airdrop? @BGCMamita @ballestra @SiMONTiDE @austin_malerba @WKCrypto @ak_odua @bubur_ijoo @SbhamuOk @fatrwe @Lili81891401 https://t.co/u0GRtEx4Np",
+    author_id: "1547196825995808769",
+    id: "1607481676892114944",
+    edit_history_tweet_ids: ["1607481676892114944"],
+    author: {
+      id: "1547196825995808769",
+      name: "Cami Nogues",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1601913472400461825/xOGYLdQB_normal.png",
+      username: "neceitelitun1",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1607202683496321026",
+      },
+    ],
+    text: "@austin_malerba Thanks! And yeah man that's a great idea 🙂 Merry Christmas btw!",
+    author_id: "2588511204",
+    id: "1607203763403603970",
+    edit_history_tweet_ids: ["1607203763403603970"],
+    author: {
+      id: "2588511204",
+      name: "Nico Pellerin",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1613378599502880770/8quB1ILq_normal.jpg",
+      username: "nicopellerin_io",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1606291205519728642",
+      },
+    ],
+    text: "@KennethCassel @austin_malerba Wow, I've been searching for a tool like this",
+    author_id: "1274846586699501568",
+    id: "1606363818027757568",
+    edit_history_tweet_ids: ["1606363818027757568"],
+    author: {
+      id: "1274846586699501568",
+      name: "Cy63rX👨‍💻",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1607308921374478336/gofQbimJ_normal.jpg",
+      username: "samuelajala01",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1606229457139687424",
+      },
+    ],
+    text: "@samuelajala01 this is an app me and @austin_malerba have been building the last few months. https://t.co/ewZg06RoSI",
+    author_id: "1319269656264409088",
+    id: "1606291205519728642",
+    edit_history_tweet_ids: ["1606291205519728642"],
+    author: {
+      id: "1319269656264409088",
+      name: "kenneth cassel",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1544718541911384066/2rC32smx_normal.jpg",
+      username: "KennethCassel",
+    },
+  },
+  {
+    referenced_tweets: [
+      {
+        type: "replied_to",
+        id: "1606025687369916421",
+      },
+    ],
+    text: "@austin_malerba @apkashyap12 @KennethCassel I'm waiting https://t.co/Lci6hbTDNy",
+    author_id: "793559147837067264",
+    id: "1606176011229442048",
+    edit_history_tweet_ids: ["1606176011229442048"],
+    author: {
+      id: "793559147837067264",
+      name: "Nikil Ragav ⠕",
+      profile_image_url:
+        "https://pbs.twimg.com/profile_images/1270783906845949952/ESKV1Jzg_normal.jpg",
+      username: "nikil_ragav",
+    },
+  },
+  {
     edit_history_tweet_ids: ["1605939015160459264"],
     text: "@austin_malerba @ilyamiskov @abinashmohanty Ha yeah, takes a bit of time, but learning the keyboard shortcuts really helps. Also if possible try using using a 3 button mouse",
     author_id: "2588511204",
