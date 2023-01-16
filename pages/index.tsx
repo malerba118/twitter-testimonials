@@ -21,6 +21,7 @@ import { AiFillHeart as HeartIcon, AiOutlineCodeSandbox } from "react-icons/ai";
 import { format } from "date-fns";
 import Image from "next/image";
 import frostinPng from "../public/frostin.png";
+import ArrowButton from "../lib/ArrowButton";
 
 const Video = chakra("video");
 const MotionVideo = motion(Video);
@@ -211,7 +212,7 @@ export default function Home() {
                         target="_blank"
                         _hover={{ textDecoration: "none" }}
                       >
-                        <Button
+                        <ArrowButton
                           size="sm"
                           rounded="full"
                           colorScheme="blackAlpha"
@@ -223,12 +224,9 @@ export default function Home() {
                             bg: "blackAlpha.600",
                             borderColor: "rgba(255,255,255,0.4)",
                           }}
-                        >
-                          <AiOutlineCodeSandbox />
-                          <Text fontSize="sm" ml={1}>
-                            See Code
-                          </Text>
-                        </Button>
+                          text="See Code"
+                          icon={<AiOutlineCodeSandbox />}
+                        />
                       </Link>
                     )}
                   </HStack>
