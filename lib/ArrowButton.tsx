@@ -10,8 +10,8 @@ const ArrowButton = ({ text, icon, ...otherProps }: any) => {
   return (
     <Button
       {...otherProps}
-      onPointerEnter={() => setHovered(true)}
-      onPointerLeave={() => setHovered(false)}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       <Flex>
         <MotionFlex
