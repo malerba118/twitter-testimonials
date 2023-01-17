@@ -15,7 +15,7 @@ const variants = {
   },
   shaft: {
     expanded: {
-      width: "1.25rem",
+      width: "1.1rem",
     },
     collapsed: {
       width: 0,
@@ -41,48 +41,42 @@ const variants = {
 
 function Arrow({ isExpanded, color = "white" }: any) {
   return (
-    <MotionConfig
-      transition={{
-        duration: 0.25,
-      }}
+    <MotionBox
+      animate={isExpanded ? "expanded" : "collpased"}
+      pos="relative"
+      display="inline-flex"
+      alignItems="center"
     >
       <MotionBox
-        animate={isExpanded ? "expanded" : "collpased"}
-        pos="relative"
-        display="inline-flex"
-        alignItems="center"
-      >
-        <MotionBox
-          className="shaft"
-          bgColor={color}
-          variants={variants.shaft}
-          height="1px"
-          rounded="full"
-        />
-        <MotionBox
-          className="headA"
-          pos="absolute"
-          right={0}
-          h="1px"
-          bgColor={color}
-          variants={variants.headA}
-          transform="rotate(40deg) translateY(0px)"
-          transformOrigin="center right"
-          rounded="full"
-        />
-        <MotionBox
-          className="headB"
-          pos="absolute"
-          right={0}
-          h="1px"
-          bgColor={color}
-          variants={variants.headB}
-          transform="rotate(-40deg) translateY(-0px)"
-          transformOrigin="center right"
-          rounded="full"
-        />
-      </MotionBox>
-    </MotionConfig>
+        className="shaft"
+        bgColor={color}
+        variants={variants.shaft}
+        height="2px"
+        rounded="full"
+      />
+      <MotionBox
+        className="headA"
+        pos="absolute"
+        right={0}
+        h="2px"
+        bgColor={color}
+        variants={variants.headA}
+        transform="rotate(40deg) translateY(0.5px)"
+        transformOrigin="center right"
+        rounded="full"
+      />
+      <MotionBox
+        className="headB"
+        pos="absolute"
+        right={0}
+        h="2px"
+        bgColor={color}
+        variants={variants.headB}
+        transform="rotate(-40deg) translateY(-0.5px)"
+        transformOrigin="center right"
+        rounded="full"
+      />
+    </MotionBox>
   );
 }
 
