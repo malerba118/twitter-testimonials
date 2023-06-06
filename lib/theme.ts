@@ -13,4 +13,48 @@ export const theme = extendTheme({
     heading: `'Space Mono', sans-serif`,
     body: `'Space Grotesk', sans-serif`,
   },
+  semanticTokens: {
+    colors: {
+      charcoal: "#313131",
+    },
+    borders: {
+      sm: "1px solid var(--chakra-colors-charcoal)",
+    },
+  },
+  components: {
+    Button: {
+      baseStyle: {
+        rounded: "none",
+        transition: "filter 0.3s",
+      },
+      variants: {
+        primary: {
+          bg: "charcoal",
+          filter: "brightness(100%)",
+          color: "white",
+          _hover: {
+            bg: "charcoal",
+            filter: "brightness(90%)",
+          },
+          _active: {
+            bg: "charcoal",
+            filter: "brightness(80%)",
+          },
+        },
+        secondary: {
+          bg: "transparent",
+          filter: "brightness(100%)",
+          color: "charcoal",
+          _hover: {
+            bg: "transparent",
+            filter: "brightness(90%)",
+          },
+          _active: {
+            bg: "transparent",
+            filter: "brightness(80%)",
+          },
+        },
+      },
+    },
+  },
 });
