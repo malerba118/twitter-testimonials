@@ -15,6 +15,7 @@ export const theme = extendTheme({
   },
   semanticTokens: {
     colors: {
+      offwhite: "#fbfbfb",
       charcoal: "#313131",
     },
     borders: {
@@ -22,6 +23,19 @@ export const theme = extendTheme({
     },
   },
   components: {
+    Heading: {
+      baseStyle: {
+        letterSpacing: "0.1rem",
+        color: "charcoal",
+      },
+    },
+    Text: {
+      baseStyle: {
+        letterSpacing: "0.1rem",
+        color: "blackAlpha.600",
+        lineHeight: "155%",
+      },
+    },
     Button: {
       baseStyle: {
         rounded: "none",
