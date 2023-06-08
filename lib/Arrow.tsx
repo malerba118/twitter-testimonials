@@ -51,14 +51,14 @@ function Arrow({ isExpanded, color = "white" }: any) {
         className="shaft"
         bgColor={color}
         variants={variants.shaft}
-        height="2px"
+        height="1px"
         rounded="full"
       />
       <MotionBox
         className="headA"
         pos="absolute"
         right={0}
-        h="2px"
+        h="1px"
         bgColor={color}
         variants={variants.headA}
         transform="rotate(40deg) translateY(0.5px)"
@@ -69,7 +69,7 @@ function Arrow({ isExpanded, color = "white" }: any) {
         className="headB"
         pos="absolute"
         right={0}
-        h="2px"
+        h="1px"
         bgColor={color}
         variants={variants.headB}
         transform="rotate(-40deg) translateY(-0.5px)"

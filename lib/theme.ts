@@ -25,13 +25,13 @@ export const theme = extendTheme({
   components: {
     Heading: {
       baseStyle: {
-        letterSpacing: "0.1rem",
+        letterSpacing: "0.05rem",
         color: "charcoal",
       },
     },
     Text: {
       baseStyle: {
-        letterSpacing: "0.1rem",
+        letterSpacing: "0.05rem",
         color: "blackAlpha.600",
         lineHeight: "155%",
       },

@@ -26,7 +26,7 @@ const ArrowButton = ({ text, icon, ...otherProps }: any) => {
           >
             <Arrow isExpanded={hovered} />
           </MotionFlex>
-          <Text>{text}</Text>
+          <Text color="white">{text}</Text>
           <MotionFlex
             alignItems="center"
             justifyContent="center"
@@ -36,6 +36,7 @@ const ArrowButton = ({ text, icon, ...otherProps }: any) => {
               width: !hovered ? "1.5rem" : 0,
               overflow: "hidden",
             }}
+            color="white"
           >
             {icon}
           </MotionFlex>

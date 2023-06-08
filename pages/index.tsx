@@ -1,292 +1,340 @@
 import {
   Box,
+  Button,
+  Center,
   chakra,
   Flex,
   Heading,
   HStack,
-  Icon,
   Img,
+  SimpleGrid,
+  Spacer,
   Stack,
   Text,
-  Link,
-  Button,
-  Center,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
-import Head from "next/head";
-import { useLayoutEffect, useRef, useState } from "react";
-import { dataset } from "../lib/data";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
-import { AiFillHeart as HeartIcon, AiOutlineCodeSandbox } from "react-icons/ai";
-import { format } from "date-fns";
+
 import Image from "next/image";
-import frostinPng from "../public/frostin.png";
-import ArrowButton from "../lib/ArrowButton";
+import Navbar from "../lib/Navbar";
+import TransitionContent from "../lib/TransitionContent";
+import TransitionOverlay from "../lib/TransitionOverlay";
+import frostin from "../public/frostin.png";
+import stripes from "../public/stripes.png";
 
-const Video = chakra("video");
-const MotionVideo = motion(Video);
-
-const whitelist = new Set(["1602671703410282497"]);
-
-const tweets = dataset.tweets
-  .filter(
-    (tweet) =>
-      (!tweet.isReply && tweet.hasMedia && tweet.replies.length > 0) ||
-      whitelist.has(tweet.id)
-  )
-  .sort((a, b) => b.likes - a.likes);
-
-// interface MediaProps {
-//   media: Media;
-// }
-
-const Media = ({ media, ...otherProps }: any) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [canPlay, setCanPlay] = useState(false);
-  const [inView, setInView] = useState(false);
-
-  useLayoutEffect(() => {
-    if (canPlay && inView) {
-      videoRef.current?.play();
-    } else {
-      videoRef.current?.pause();
-    }
-  }, [canPlay, inView]);
-
-  if (media.type === "video") {
-    return (
-      <MotionVideo
-        ref={videoRef}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="none"
-        onViewportEnter={() => {
-          setInView(true);
-        }}
-        onViewportLeave={() => {
-          setInView(false);
-        }}
-        onCanPlay={() => setCanPlay(true)}
-        {...otherProps}
-      >
-        {media.sources
-          .filter(
-            (src: any) =>
-              src.content_type === "video/mp4" && Number(src.bitrate) > 300000
-          )
-          .map((src: any) => (
-            <source key={src.url} src={src.url} type={src.content_type} />
-          ))}
-      </MotionVideo>
-    );
-  } else {
-    return <Img src={media.sources[0].url} {...otherProps} />;
-  }
-};
-
-export default function Home() {
+export default function Services() {
   return (
-    <>
-      <Head>
-        <title>frostin.dev</title>
-        <meta
-          name="description"
-          content="A showcase of frostin's best work from 2022."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Box as="main">
-        <Center flexDir="column" h="80vh" pt={12}>
-          <Box w={{ base: "75%", md: "50%" }}>
-            <Image
-              src={frostinPng}
-              alt="header"
-              objectFit="contain"
-              style={{ width: "100%" }}
-            />
-          </Box>
-          <Text
-            mt={12}
-            fontSize="lg"
-            color="gray.500"
-            fontWeight={500}
-            letterSpacing="2px"
-            py={4}
-            px={6}
-            border="1px dashed rgba(0,0,0,0.25)"
-            rounded="2xl"
+    <Box borderLeft="sm" borderRight="sm">
+      <TransitionOverlay />
+      <TransitionContent>
+        <Navbar />
+        <Stack pos="relative" alignItems="center" py={28} borderBottom="sm">
+          <Image
+            src={frostin}
+            alt="frostin"
+            style={{ width: "70vw", maxWidth: "800px" }}
+          />
+          <Stack spacing={10} alignItems="center" maxW="3xl" px={6}>
+            <Heading size="md" fontWeight={400} textAlign="center">
+              Add a little frostin to your cake.
+            </Heading>
+            <Button h="56px" px={10} variant="primary">
+              Apply now
+            </Button>
+            <Text>
+              Everyone wants a ux as smooth as linear’s and a ui as polished as
+              vercel’s. I’m the service that’s going to get you there. For just
+              $3,999/month I’ll custom-build polished React components, pages,
+              and apps that will leave your users mesmerized.
+              <br />
+              <br />
+              In my 10 year career I have built close to one-hundred apps and
+              dozens of libraries. Through this experience I have come to work
+              with a unique blend of speed and quality. But don’t take my word
+              for it, here’s what people say about my work.
+            </Text>
+          </Stack>
+        </Stack>
+        <Stack alignItems="center" borderBottom="sm">
+          <Stack spacing={4} py={28} maxW="3xl" px={6}>
+            <Heading>How it works</Heading>
+            <Text>
+              When you subscribe for as low as $3,999/month, you’ll be given a
+              dedicated GitHub repo where you can make requests via GitHub
+              Issues. <br />
+              <br />
+              From there, you may submit as many requests as you’d like to the
+              backlog and I will dedicate up to 40 hours per month working to
+              deliver you high quality React/TypeScript/JavaScript code. <br />
+              <br />
+              Don’t have any mockups yet? No problem, I’ll handle the design
+              work as well!
+            </Text>
+          </Stack>
+        </Stack>
+        <Flex
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems="center"
+          borderBottom="sm"
+          w="100%"
+        >
+          <Stack
+            flex={1}
+            width={{ base: "100%", md: "auto" }}
+            h="100%"
+            minH="100px"
+            justifyContent="center"
+            px={{ base: 8, md: 16 }}
+            borderBottom={{ base: "sm", md: "none" }}
           >
-            Best of Twitter
-          </Text>
-        </Center>
-        {tweets.map((tweet) => (
-          <Box key={tweet.id}>
-            <Flex flexDir="column" gap={8} mb={{ base: 8, md: 20 }}>
-              <Box
-                pos="sticky"
-                top={0}
-                pt={{ base: 6, md: 16 }}
-                px={6}
-                pb={0}
-                bg="#fbfbfb"
-                zIndex={1}
+            <Heading>The offerings</Heading>
+          </Stack>
+          <SimpleGrid width={{ base: "100%", md: "60%" }} columns={4}>
+            <Box
+              h="64px"
+              borderBottom="sm"
+              borderLeft="sm"
+              bgImage={stripes.src}
+              bgSize="contain"
+              bgRepeat="repeat"
+            ></Box>
+            <Center h="64px" borderBottom="sm" borderLeft="sm">
+              <Text color="black">Component</Text>
+            </Center>
+            <Center h="64px" borderBottom="sm" borderLeft="sm">
+              <Text color="black">Page</Text>
+            </Center>
+            <Center h="64px" borderBottom="sm" borderLeft="sm">
+              <Text color="black">App</Text>
+            </Center>
+            <Center
+              h="64px"
+              borderBottom="sm"
+              borderLeft="sm"
+              justifyContent="start"
+              px={6}
+            >
+              <Text color="black">Design</Text>
+            </Center>
+            <Center h="64px" borderBottom="sm" borderLeft="sm">
+              <Text>1-5 hours</Text>
+            </Center>
+            <Center h="64px" borderBottom="sm" borderLeft="sm">
+              <Text>5-10 hours</Text>
+            </Center>
+            <Center h="64px" borderBottom="sm" borderLeft="sm">
+              <Text>20-40 hours</Text>
+            </Center>
+            <Center justifyContent="start" px={6} h="64px" borderLeft="sm">
+              <Text color="black">Development</Text>
+            </Center>
+            <Center h="64px" borderLeft="sm">
+              <Text>5-10 hours</Text>
+            </Center>
+            <Center h="64px" borderLeft="sm">
+              <Text>10-30 hours</Text>
+            </Center>
+            <Center h="64px" borderLeft="sm">
+              <Text>40-120 hours</Text>
+            </Center>
+          </SimpleGrid>
+        </Flex>
+        <Flex
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems="center"
+          borderBottom="sm"
+          w="100%"
+        >
+          <Stack
+            flex={1}
+            h="100%"
+            minH="100px"
+            width={{ base: "100%", md: "auto" }}
+            justifyContent="center"
+            px={{ base: 8, md: 16 }}
+            borderBottom={{ base: "sm", md: "none" }}
+          >
+            <Heading>The deliverables</Heading>
+          </Stack>
+          <Stack flex={1.4} width={{ base: "100%", md: "auto" }} spacing={0}>
+            <Stack py={12} px={8} borderLeft="sm" borderBottom="sm">
+              <Text
+                color="black"
+                textDecoration="underline"
+                // fontWeight={600}
               >
-                {/* <Box
-                  borderTop="1px dashed rgba(0,0,0,0.125)"
-                  pos="absolute"
-                  top={0}
-                  left={0}
-                  right={0}
-                  style={{
-                    WebkitMaskImage:
-                      "radial-gradient(rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 0%, rgba(255,255,255, 0) 80%)",
-                    WebkitMaskSize: "100%",
-                  }}
-                /> */}
-                <Box
-                  w={{ base: "100%", md: "550px" }}
-                  h={{ base: "260px", md: "330px" }}
-                  marginX="auto"
-                  pos="relative"
-                >
-                  <Link
-                    href={`https://twitter.com/austin_malerba/status/${tweet.id}`}
-                    target="_blank"
-                    display="block"
-                    borderRadius="1.75rem"
-                    boxShadow={`0px 5.4px 5.3px rgba(0, 0, 0, 0.008),
-                  0px 13px 12.6px rgba(0, 0, 0, 0.012),
-                  0px 24.4px 23.8px rgba(0, 0, 0, 0.015),
-                  0px 43.6px 42.4px rgba(0, 0, 0, 0.018),
-                  0px 81.5px 79.4px rgba(0, 0, 0, 0.022),
-                  0px 195px 190px rgba(0, 0, 0, 0.03)`}
-                    bg="#fbfbfb"
-                    p="8px"
-                    w="100%"
-                    h="100%"
-                    pos="relative"
-                    cursor="pointer"
-                    role="group"
-                  >
-                    <Box
-                      pos="absolute"
-                      inset="8px"
-                      bgGradient="linear(to-l, pink.200, blue.200)"
-                      borderRadius="1.75rem"
-                      opacity={0}
-                      zIndex={0}
-                      _groupHover={{
-                        inset: "0px",
-                        opacity: 0.6,
-                      }}
-                      transition="all 0.3s"
-                    />
-
-                    <Box
-                      _groupHover={{
-                        transform: "scale(0.98)",
-                      }}
-                      transition="transform 0.3s"
-                      w="100%"
-                      h="100%"
-                      overflow="hidden"
-                    >
-                      <LazyLoadComponent>
-                        <Media
-                          media={tweet.primaryMedia}
-                          w="100%"
-                          h="100%"
-                          objectFit="cover"
-                          borderRadius="1.35rem"
-                        />
-                      </LazyLoadComponent>
-                    </Box>
-                  </Link>
-                  <HStack pos="absolute" bottom={4} right={4}>
-                    {tweet.sandboxUrl && (
-                      <Link
-                        href={tweet.sandboxUrl}
-                        target="_blank"
-                        _hover={{ textDecoration: "none" }}
-                      >
-                        <ArrowButton
-                          size="sm"
-                          rounded="full"
-                          colorScheme="blackAlpha"
-                          aria-label="View Code"
-                          border="1px solid rgba(255,255,255,0.2)"
-                          bg="blackAlpha.500"
-                          backdropFilter="blur(4px)"
-                          _hover={{
-                            bg: "blackAlpha.600",
-                            borderColor: "rgba(255,255,255,0.4)",
-                          }}
-                          text="See Code"
-                          icon={<AiOutlineCodeSandbox />}
-                        />
-                      </Link>
-                    )}
-                  </HStack>
-                </Box>
-              </Box>
-              <HStack
-                px={{ base: 6, md: 0 }}
-                w="sm"
-                marginX="auto"
-                pt={4}
-                spacing={6}
+                CodeSandbox
+              </Text>
+              <Text>
+                Code that you can run, edit, and deploy directly from your
+                browser.
+              </Text>
+            </Stack>
+            <Stack py={12} px={8} borderLeft="sm">
+              <Text
+                color="black"
+                textDecoration="underline"
+                // fontWeight={600}
               >
-                <HStack color="gray.600">
-                  <Icon as={HeartIcon} mb="2px" color="red.400" />
-                  <Text>{tweet.likes}</Text>
-                </HStack>
-                <Box borderTop="1px dashed rgba(0,0,0,0.15)" flex={1} />
-                <Text color="gray.600">
-                  {format(tweet.createdAt, "MMM YYY")}
-                </Text>
-              </HStack>
-              <Stack spacing={8} px={{ base: 6, md: 0 }} w="sm" marginX="auto">
-                {tweet.replies.map((mention) => (
-                  <Stack
-                    as={Link}
-                    href={`https://twitter.com/${mention.author.username}/status/${mention.id}`}
-                    target="_blank"
-                    key={mention.id}
-                    spacing={1}
-                    role="group"
-                    pos="relative"
-                    zIndex={0}
-                    cursor="pointer"
-                  >
-                    <Box
-                      pos="absolute"
-                      inset="-2px -4px"
-                      bgGradient="linear(to-l, pink.200, blue.200)"
-                      borderRadius="2xl"
-                      opacity={0}
-                      zIndex={-1}
-                      _groupHover={{
-                        inset: "-8px -12px",
-                        opacity: 0.25,
-                      }}
-                      transition="all 0.3s"
-                    />
-                    <Heading fontSize="md" fontWeight="bold">
-                      {mention.author.name}
-                    </Heading>
-                    <Text fontSize="md" color="gray.600">
-                      {mention.text}
-                    </Text>
-                  </Stack>
-                ))}
-              </Stack>
-            </Flex>
+                Figma
+              </Text>
+              <Text>
+                A Figma design file with mockups and assets that you can further
+                edit to your liking.
+              </Text>
+            </Stack>
+          </Stack>
+        </Flex>
+        <Flex pos="relative">
+          <Box borderRight="sm" borderBottom="sm">
+            <Box pos="sticky" top={0} p={4}>
+              <Heading
+                h="fit-content"
+                size="4xl"
+                style={{
+                  writingMode: "vertical-lr",
+                  textOrientation: "mixed",
+                }}
+                transform="rotate(180deg)"
+                transformOrigin="center"
+              >
+                Examples
+              </Heading>
+            </Box>
           </Box>
-        ))}
-      </Box>
-    </>
+          <Box pos="relative" flex={1}>
+            <Flex
+              pos="sticky"
+              top={0}
+              h="70px"
+              w="100%"
+              borderBottom="sm"
+              bg="offwhite"
+              zIndex={1}
+            >
+              <Center flex={1} borderRight="sm">
+                <Heading>Request</Heading>
+              </Center>
+              <Center flex={1}>
+                <Heading>Deliverable</Heading>
+              </Center>
+            </Flex>
+            <HStack h="31vw" spacing={0}>
+              <Stack w="50%" p={10} h="100%" borderBottom="sm">
+                <Text color="black" fontSize="xl">
+                  Animated Glowing Button
+                </Text>
+                <Text>
+                  &ldquo;Yo frostin, could you make me one of those buttons with
+                  a fancy glowing border that animates around it infinitely?
+                  &rdquo;
+                </Text>
+              </Stack>
+              <Box
+                pos="relative"
+                h="100%"
+                flex={1}
+                bg="black"
+                borderBottom="sm"
+                borderLeft="sm"
+              >
+                <chakra.video
+                  src="/fancy-glowing-button.mp4"
+                  h="100%"
+                  w="100%"
+                  objectFit="cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              </Box>
+            </HStack>
+            <HStack h="31vw" spacing={0}>
+              <Stack w="50%" p={10} h="100%" borderBottom="sm">
+                <Text color="black" fontSize="xl">
+                  Reorderable List
+                </Text>
+                <Text>
+                  &ldquo;Hey, I'd like a react component that lets me pass in an
+                  array of items and will allow me to drag to reorder the
+                  items.&rdquo;
+                </Text>
+              </Stack>
+              <Box
+                pos="relative"
+                h="100%"
+                flex={1}
+                borderBottom="sm"
+                borderLeft="sm"
+                // borderColor="whiteAlpha.500"
+              >
+                <chakra.video
+                  src="/reorderable-list.mp4"
+                  h="100%"
+                  w="100%"
+                  objectFit="cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              </Box>
+            </HStack>
+            <HStack h="31vw" spacing={0}>
+              <Stack w="50%" p={10} h="100%" borderBottom="sm">
+                <Text color="black" fontSize="xl">
+                  Testimonials for Marketing Site
+                </Text>
+                <Text>
+                  &ldquo;Hi, we need a tweets section for our marketing page to
+                  show what people think about our product!&rdquo;
+                </Text>
+              </Stack>
+              <Box
+                pos="relative"
+                h="100%"
+                flex={1}
+                bg="black"
+                borderBottom="sm"
+                // borderColor="whiteAlpha.500"
+              >
+                <chakra.video
+                  src="/twitter-testimonials.mp4"
+                  h="100%"
+                  w="100%"
+                  objectFit="cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              </Box>
+            </HStack>
+          </Box>
+        </Flex>
+        <Stack alignItems="center" borderBottom="sm">
+          <Stack spacing={4} py={28} maxW="3xl" px={6}>
+            <Heading>Caveats</Heading>
+            <Text>
+              To keep things flowing smoothly, I will not be working directly in
+              your codebase. Onboarding processes are clunky and require lots of
+              account creations and granting of permissions. This way, i can
+              spend more hours building for you and less hours groking your
+              code, context-switching, and doing trivial onboarding work.
+              <br />
+              <br />
+              Think of this service as an opportunity to offload coding and
+              design tasks and you will receive back assets that you can then
+              integrate into your codebase. And no worries, I will provide
+              documentation outlining steps to integrate/customize all assets!
+              <br />
+              <br />
+              For this reason, I recommend that you have at least one other
+              technical person in-house that can dedicate a small amount of time
+              toward integrating assets into your codebase.
+            </Text>
+          </Stack>
+        </Stack>
+      </TransitionContent>
+    </Box>
   );
 }
