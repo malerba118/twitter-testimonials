@@ -282,6 +282,7 @@ const getAnimationForProperty = (
   const offsets: number[] = [];
   for (const [offset, keyframe] of keyframesMap.entries()) {
     if (property in keyframe) {
+      // @ts-ignore
       values.push(keyframe[property]);
       offsets.push(offset);
     }
@@ -329,6 +330,7 @@ const processKeyframes = (keyframes: Keyframes, data: any) => {
   );
   const map = new Map<number, StyleObj>();
   offsets.forEach((offset) => {
+    // @ts-ignore
     map.set(Number(offset), keyframesObj[offset]);
   });
   return map;
