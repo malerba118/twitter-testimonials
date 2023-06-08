@@ -173,6 +173,11 @@ export const Router = ({ component, children }: RouterProps) => {
     // Disables jump to top on route transition
     window.history.scrollRestoration = "manual";
 
+    router.beforePopState((state) => {
+      state.options.scroll = false;
+      return true;
+    });
+
     const handlers = {
       start: (path: string) => {
         manager.dispatch({
