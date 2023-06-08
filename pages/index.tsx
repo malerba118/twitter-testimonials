@@ -184,7 +184,11 @@ export default function Services() {
           </Stack>
         </Flex>
         <Flex pos="relative">
-          <Box borderRight="sm" borderBottom="sm">
+          <Box
+            borderRight="sm"
+            borderBottom="sm"
+            display={{ base: "none", md: "block" }}
+          >
             <Box pos="sticky" top={0} p={4}>
               <Heading
                 h="fit-content"
@@ -209,6 +213,7 @@ export default function Services() {
               borderBottom="sm"
               bg="offwhite"
               zIndex={1}
+              display={{ base: "none", md: "flex" }}
             >
               <Center flex={1} borderRight="sm">
                 <Heading>Request</Heading>
@@ -217,8 +222,23 @@ export default function Services() {
                 <Heading>Deliverable</Heading>
               </Center>
             </Flex>
-            <HStack h="30vw" spacing={0}>
-              <Stack w="50%" p={10} h="100%" borderBottom="sm">
+            <Stack
+              p={8}
+              borderBottom="sm"
+              display={{ base: "block", md: "none" }}
+            >
+              <Heading>Examples</Heading>
+            </Stack>
+            <Flex
+              h={{ base: "auto", md: "30vw" }}
+              flexDir={{ base: "column", md: "row" }}
+            >
+              <Stack
+                flex={1}
+                p={10}
+                // h="100%"
+                borderBottom="sm"
+              >
                 <Text color="black" fontSize="xl">
                   Animated Glowing Button
                 </Text>
@@ -232,6 +252,7 @@ export default function Services() {
                 pos="relative"
                 h="100%"
                 flex={1}
+                minW="50%"
                 bg="black"
                 borderBottom="sm"
                 borderLeft="sm"
@@ -248,9 +269,17 @@ export default function Services() {
                   playsInline
                 />
               </Box>
-            </HStack>
-            <HStack h="30vw" spacing={0}>
-              <Stack w="50%" p={10} h="100%" borderBottom="sm">
+            </Flex>
+            <Flex
+              h={{ base: "auto", md: "30vw" }}
+              flexDir={{ base: "column", md: "row" }}
+            >
+              <Stack
+                flex={1}
+                p={10}
+                // h="100%"
+                borderBottom="sm"
+              >
                 <Text color="black" fontSize="xl">
                   Portfolio Site
                 </Text>
@@ -262,8 +291,9 @@ export default function Services() {
               </Stack>
               <Box
                 pos="relative"
-                h="100%"
+                // h="100%"
                 flex={1}
+                minW="50%"
                 bg="black"
                 borderBottom="sm"
                 borderLeft="sm"
@@ -280,9 +310,12 @@ export default function Services() {
                   playsInline
                 />
               </Box>
-            </HStack>
-            <HStack h="30vw" spacing={0}>
-              <Stack w="50%" p={10} h="100%" borderBottom="sm">
+            </Flex>
+            <Flex
+              h={{ base: "auto", md: "30vw" }}
+              flexDir={{ base: "column", md: "row" }}
+            >
+              <Stack flex={1} p={10} borderBottom="sm">
                 <Text color="black" fontSize="xl">
                   Reorderable List
                 </Text>
@@ -296,6 +329,7 @@ export default function Services() {
                 pos="relative"
                 h="100%"
                 flex={1}
+                minW="50%"
                 borderBottom="sm"
                 borderLeft="sm"
                 // borderColor="whiteAlpha.500"
@@ -311,9 +345,17 @@ export default function Services() {
                   playsInline
                 />
               </Box>
-            </HStack>
-            <HStack h="30vw" spacing={0}>
-              <Stack w="50%" p={10} h="100%" borderBottom="sm">
+            </Flex>
+            <Flex
+              h={{ base: "auto", md: "30vw" }}
+              flexDir={{ base: "column", md: "row" }}
+            >
+              <Stack
+                flex={1}
+                p={10}
+                // h="100%"
+                borderBottom="sm"
+              >
                 <Text color="black" fontSize="xl">
                   Animated ticker section
                 </Text>
@@ -327,6 +369,7 @@ export default function Services() {
               <Box
                 pos="relative"
                 h="100%"
+                minW="50%"
                 flex={1}
                 bg="black"
                 borderBottom="sm"
@@ -343,9 +386,17 @@ export default function Services() {
                   playsInline
                 />
               </Box>
-            </HStack>
-            <HStack h="30vw" spacing={0}>
-              <Stack w="50%" p={10} h="100%" borderBottom="sm">
+            </Flex>
+            <Flex
+              h={{ base: "auto", md: "30vw" }}
+              flexDir={{ base: "column", md: "row" }}
+            >
+              <Stack
+                flex={1}
+                p={10}
+                // h="100%"
+                borderBottom="sm"
+              >
                 <Text color="black" fontSize="xl">
                   Testimonials for Marketing Site
                 </Text>
@@ -357,6 +408,7 @@ export default function Services() {
               <Box
                 pos="relative"
                 h="100%"
+                minW="50%"
                 flex={1}
                 bg="black"
                 borderBottom="sm"
@@ -373,7 +425,7 @@ export default function Services() {
                   playsInline
                 />
               </Box>
-            </HStack>
+            </Flex>
           </Box>
         </Flex>
         <Stack alignItems="center" borderBottom="sm">
