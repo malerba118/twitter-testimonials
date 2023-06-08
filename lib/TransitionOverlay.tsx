@@ -61,7 +61,7 @@ const EnterPanel = () => {
     >
       <Svg
         w="100vw"
-        h="100vh"
+        h="100svh"
         overflow="visible"
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ const ExitPanel = () => {
     >
       <Svg
         w="100vw"
-        h="100vh"
+        h="100svh"
         overflow="visible"
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"

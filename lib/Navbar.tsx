@@ -77,7 +77,7 @@ const Navbar = () => {
           bottom={"-1px"}
           left={0}
           h="155%"
-          w="110%"
+          w="155%"
           bg="offwhite"
           style={{ rotate }}
           transformOrigin="bottom left"
