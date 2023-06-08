@@ -97,7 +97,7 @@ const Navbar = () => {
         </Button>
       </Link>
       <Button h="100%" px={10} variant="primary">
-        Apply now
+        Coming Soon
       </Button>
     </HStack>
   );

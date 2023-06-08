@@ -37,7 +37,7 @@ export default function Services() {
               Add a little frostin to your cake.
             </Heading>
             <Button h="56px" px={10} variant="primary">
-              Apply now
+              Coming Soon
             </Button>
             <Text>
               Everyone wants a ux as smooth as linear’s and a ui as polished as
@@ -85,7 +85,7 @@ export default function Services() {
             px={{ base: 8, md: 16 }}
             borderBottom={{ base: "sm", md: "none" }}
           >
-            <Heading>The offerings</Heading>
+            <Heading>The services</Heading>
           </Stack>
           <SimpleGrid width={{ base: "100%", md: "60%" }} columns={4}>
             <Box
@@ -217,7 +217,7 @@ export default function Services() {
                 <Heading>Deliverable</Heading>
               </Center>
             </Flex>
-            <HStack h="31vw" spacing={0}>
+            <HStack h="30vw" spacing={0}>
               <Stack w="50%" p={10} h="100%" borderBottom="sm">
                 <Text color="black" fontSize="xl">
                   Animated Glowing Button
@@ -235,6 +235,7 @@ export default function Services() {
                 bg="black"
                 borderBottom="sm"
                 borderLeft="sm"
+                borderBottomColor="whiteAlpha.600"
               >
                 <chakra.video
                   src="/fancy-glowing-button.mp4"
@@ -248,7 +249,39 @@ export default function Services() {
                 />
               </Box>
             </HStack>
-            <HStack h="31vw" spacing={0}>
+            <HStack h="30vw" spacing={0}>
+              <Stack w="50%" p={10} h="100%" borderBottom="sm">
+                <Text color="black" fontSize="xl">
+                  Portfolio Site
+                </Text>
+                <Text>
+                  &ldquo;Hey frostin, I need a slick portfolio site that
+                  supports light/dark mode and has some cool scroll animations.
+                  I'll provide a bio and project details shortly! &rdquo;
+                </Text>
+              </Stack>
+              <Box
+                pos="relative"
+                h="100%"
+                flex={1}
+                bg="black"
+                borderBottom="sm"
+                borderLeft="sm"
+                // borderColor="whiteAlpha.500"
+              >
+                <chakra.video
+                  src="/portfolio-site.mp4"
+                  h="100%"
+                  w="100%"
+                  objectFit="cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              </Box>
+            </HStack>
+            <HStack h="30vw" spacing={0}>
               <Stack w="50%" p={10} h="100%" borderBottom="sm">
                 <Text color="black" fontSize="xl">
                   Reorderable List
@@ -279,7 +312,39 @@ export default function Services() {
                 />
               </Box>
             </HStack>
-            <HStack h="31vw" spacing={0}>
+            <HStack h="30vw" spacing={0}>
+              <Stack w="50%" p={10} h="100%" borderBottom="sm">
+                <Text color="black" fontSize="xl">
+                  Animated ticker section
+                </Text>
+                <Text>
+                  &ldquo;Hey, I need a section for my site that shows two
+                  animated tickers displaying project images and I would like
+                  the images to appear fullscreen when you click on them.
+                  &rdquo;
+                </Text>
+              </Stack>
+              <Box
+                pos="relative"
+                h="100%"
+                flex={1}
+                bg="black"
+                borderBottom="sm"
+                borderBottomColor="whiteAlpha.600"
+              >
+                <chakra.video
+                  src="/camera-utils.mp4"
+                  h="100%"
+                  w="100%"
+                  objectFit="cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              </Box>
+            </HStack>
+            <HStack h="30vw" spacing={0}>
               <Stack w="50%" p={10} h="100%" borderBottom="sm">
                 <Text color="black" fontSize="xl">
                   Testimonials for Marketing Site
