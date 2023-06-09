@@ -116,7 +116,7 @@ export default function Services() {
               borderBottom="sm"
               borderLeft="sm"
               justifyContent="start"
-              px={6}
+              px={{ base: 2, md: 6 }}
             >
               <Text color="black">Design</Text>
             </Center>
@@ -129,7 +129,12 @@ export default function Services() {
             <Center h="64px" borderBottom="sm" borderLeft="sm">
               <Text>20-40 hours</Text>
             </Center>
-            <Center justifyContent="start" px={6} h="64px" borderLeft="sm">
+            <Center
+              justifyContent="start"
+              px={{ base: 2, md: 6 }}
+              h="64px"
+              borderLeft="sm"
+            >
               <Text color="black">Development</Text>
             </Center>
             <Center h="64px" borderLeft="sm">
