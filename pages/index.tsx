@@ -45,9 +45,9 @@ export default function Services() {
             <Button h="56px" px={10} variant="primary">
               Maybe Coming Soon
             </Button>
-            <Text px={10}>
-              Everyone wants a ux as smooth as linear’s and a ui as polished as
-              vercel’s. I’m the service that’s going to get you there. For just
+            <Text px={{ base: 10, md: 6 }}>
+              Everyone wants a ux as smooth as Linear’s and a ui as polished as
+              Vercel’s. I’m the service that’s going to get you there. For just
               $3,999/month I’ll custom-build polished React components, pages,
               and apps that will leave your users mesmerized.
               <br />
@@ -60,7 +60,12 @@ export default function Services() {
           </Stack>
         </Stack>
         <Stack alignItems="center" borderBottom="sm">
-          <Stack spacing={4} py={{ base: 10, md: 28 }} maxW="3xl" px={10}>
+          <Stack
+            spacing={4}
+            py={{ base: 10, md: 28 }}
+            maxW="3xl"
+            px={{ base: 10, md: 6 }}
+          >
             <Heading>How it works</Heading>
             <Text>
               When you subscribe for as low as $3,999/month, you’ll be given a
@@ -440,7 +445,12 @@ export default function Services() {
           </Box>
         </Flex>
         <Stack alignItems="center" borderBottom="sm">
-          <Stack spacing={4} py={{ base: 10, md: 28 }} maxW="3xl" px={8}>
+          <Stack
+            spacing={4}
+            py={{ base: 10, md: 28 }}
+            maxW="3xl"
+            px={{ base: 8, md: 6 }}
+          >
             <Heading>Caveats</Heading>
             <Text>
               To keep things flowing smoothly, I will not be working directly in
