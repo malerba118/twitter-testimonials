@@ -105,11 +105,11 @@ export default function Home() {
         <TransitionOverlay />
         <TransitionContent>
           <Navbar />
-          <Center flexDir="column" pt={28} pb={4}>
+          <Center flexDir="column" pt={28} pb={{ base: 20, md: 10 }}>
             <Image
               src={frostin}
               alt="frostin"
-              style={{ width: "70vw", maxWidth: "800px" }}
+              style={{ width: "75vw", maxWidth: "800px" }}
             />
             <Text
               mt={12}

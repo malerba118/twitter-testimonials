@@ -36,7 +36,7 @@ export default function Services() {
           <Image
             src={frostin}
             alt="frostin"
-            style={{ width: "70vw", maxWidth: "800px" }}
+            style={{ width: "75vw", maxWidth: "800px" }}
           />
           <Stack spacing={10} alignItems="center" maxW="3xl">
             <Heading size="md" fontWeight={400} textAlign="center" px={6}>
