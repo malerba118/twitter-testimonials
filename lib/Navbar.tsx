@@ -96,7 +96,12 @@ const Navbar = () => {
           Work
         </Button>
       </Link>
-      <Button h="100%" px={10} variant="primary">
+      <Button
+        h="100%"
+        px={10}
+        variant="primary"
+        display={{ base: "none", md: "initial" }}
+      >
         Maybe Coming Soon
       </Button>
     </HStack>

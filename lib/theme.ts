@@ -6,6 +6,10 @@ export const theme = extendTheme({
     global: {
       body: {
         bg: "#fbfbfb",
+        fontSize: {
+          base: "0.75rem",
+          md: "1rem",
+        },
       },
     },
   },

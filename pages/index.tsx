@@ -26,20 +26,26 @@ export default function Services() {
       <TransitionOverlay />
       <TransitionContent>
         <Navbar />
-        <Stack pos="relative" alignItems="center" py={28} borderBottom="sm">
+        <Stack
+          pos="relative"
+          alignItems="center"
+          pt={28}
+          pb={{ base: 10, md: 28 }}
+          borderBottom="sm"
+        >
           <Image
             src={frostin}
             alt="frostin"
             style={{ width: "70vw", maxWidth: "800px" }}
           />
-          <Stack spacing={10} alignItems="center" maxW="3xl" px={6}>
-            <Heading size="md" fontWeight={400} textAlign="center">
+          <Stack spacing={10} alignItems="center" maxW="3xl">
+            <Heading size="md" fontWeight={400} textAlign="center" px={6}>
               Add a little frostin to your cake.
             </Heading>
             <Button h="56px" px={10} variant="primary">
               Maybe Coming Soon
             </Button>
-            <Text>
+            <Text px={10}>
               Everyone wants a ux as smooth as linear’s and a ui as polished as
               vercel’s. I’m the service that’s going to get you there. For just
               $3,999/month I’ll custom-build polished React components, pages,
@@ -54,7 +60,7 @@ export default function Services() {
           </Stack>
         </Stack>
         <Stack alignItems="center" borderBottom="sm">
-          <Stack spacing={4} py={28} maxW="3xl" px={6}>
+          <Stack spacing={4} py={{ base: 10, md: 28 }} maxW="3xl" px={10}>
             <Heading>How it works</Heading>
             <Text>
               When you subscribe for as low as $3,999/month, you’ll be given a
@@ -429,7 +435,7 @@ export default function Services() {
           </Box>
         </Flex>
         <Stack alignItems="center" borderBottom="sm">
-          <Stack spacing={4} py={28} maxW="3xl" px={6}>
+          <Stack spacing={4} py={{ base: 10, md: 28 }} maxW="3xl" px={8}>
             <Heading>Caveats</Heading>
             <Text>
               To keep things flowing smoothly, I will not be working directly in
