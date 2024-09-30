@@ -43,7 +43,7 @@ export default function Services() {
               Add a little frostin to your cake.
             </Heading>
             <Button h="56px" px={10} variant="primary">
-              Maybe Coming Soon
+              Maybe Coming Someday
             </Button>
             <Text px={{ base: 10, md: 6 }}>
               Everyone wants a ux as smooth as Linear’s and a ui as polished as

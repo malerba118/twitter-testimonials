@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Router component={Component}>
         <Route path="/" enterDuration={700} exitDuration={700} />
         <Route path="/work" enterDuration={700} exitDuration={700} />
+        <Route path="/converter" enterDuration={700} exitDuration={700} />
       </Router>
       {/* <Component {...pageProps} />{" "} */}
     </ChakraProvider>

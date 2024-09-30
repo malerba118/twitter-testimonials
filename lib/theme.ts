@@ -72,6 +72,20 @@ export const theme = extendTheme({
             filter: "brightness(80%)",
           },
         },
+        dashed: {
+          bg: "transparent",
+          border: "1px dashed black",
+          filter: "brightness(100%)",
+          color: "charcoal",
+          _hover: {
+            bg: "transparent",
+            filter: "brightness(90%)",
+          },
+          _active: {
+            bg: "transparent",
+            filter: "brightness(80%)",
+          },
+        },
       },
     },
   },

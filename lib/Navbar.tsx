@@ -96,14 +96,19 @@ const Navbar = () => {
           Work
         </Button>
       </Link>
-      <Button
+      <Link as={NextLink} h="100%" href="/converter" scroll={false}>
+        <Button h="100%" px={10} variant="secondary" borderLeft="sm">
+          Tools
+        </Button>
+      </Link>
+      {/* <Button
         h="100%"
         px={10}
         variant="primary"
         display={{ base: "none", md: "initial" }}
       >
         Maybe Coming Soon
-      </Button>
+      </Button> */}
     </HStack>
   );
 };
